@@ -1,0 +1,102 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+
+
+
+
+  <div class="indxLft2">
+        <div class="overview">
+            <br />
+            <h2>ED&amp;T <br /> Mission and Vision</h2>
+            <br />
+
+        </div>
+    </div>
+   
+
+<div class="pagecontent1">
+
+
+    <br />
+    <p class="breadcrumb"><a href="~/">Home</a> > Mission and Vision</p>
+    
+    <h3><u><strong>Mission</strong></u></h3>
+    <br />
+    <p>
+        Employee Development and Training (ED&T) develops high-performing leaders and employees through a systematic and efficient approach to workforce development and effective business partnerships in support of VBA’s Mission.
+    </p>
+
+
+    <hr />
+
+    <h3><u><strong>Vision</strong></u></h3>
+    <br />
+    <p>
+        ED&amp;T strives to create a workforce development system that delivers individualized leadership development and technical training, when and where required, which facilitates the highest level of service to Veterans and their beneficiaries.
+    </p>
+
+
+    <hr />
+    <h3><u><strong>Definition of Training</strong></u></h3>
+    <br />
+    <p>
+        Training is an activity that is directly linked to individual job competencies. It contains:
+
+        <ul>
+            <li>Clear learning objectives related to job performance;</li>
+            <li>An assessment mechanism to analyze whether the learning objectives were met; </li>
+            <li>Content that allows the employee to practice and reflect on the material being taught; and </li>
+            <li>An assessment mechanism to determine whether the training was effective. </li>
+        </ul>
+    </p>
+
+    <p>
+        In VBA, there are three general categories of training.
+
+        <ol>
+            <li>Technical training that is line of business (LoB) specific, focused on technical competencies. </li>
+            <li>Leadership development focused on leadership competencies. </li>
+            <li>Professional development, focused on all employee competencies.</li>
+        </ol>
+
+
+    </p>
+
+
+
+</div>
+
+    @section scripts
+    {
+        <script language="javascript">
+            $(document).ready(function() {
+                var $lft = $(".indxLft");
+                var $rght = $(".indxRight");
+                var hl = $lft.height();
+                var hr = $rght.height();
+                var bp;
+
+                if (hl > hr) {
+
+                    $rght.height(hl);
+
+                } else if (hr > hl) {
+                    bp = hr - hl;
+                    $lft.height(hr);
+                    $lft.css("background-position-y", bp);
+                }
+
+            });
+
+        </script>
+
+    }

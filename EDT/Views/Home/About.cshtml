@@ -1,0 +1,73 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+}
+
+
+
+
+<div class="indxLft2">
+    <div class="overview">
+        <br />
+        <h2>ED&amp;T Divisions</h2>
+
+    </div>
+</div>
+
+
+<div class="pagecontent1">
+
+
+    <br />
+    <p class="breadcrumb"><a href="~/">Home</a> > ED&amp;T Divisions</p>
+    <h3><u><strong>ED&amp;T Divisions</strong></u></h3>
+    <br />
+
+        <ul>
+            <li>The staff of the Office of the Director provides budget administration and support to the ED&T Director</li>
+            <li style="margin-top: 10px;">Technical Training and Evaluation (TT&amp;E) provides technical training systems to VBA</li>
+            <li style="margin-top: 10px;">Leadership Professional Development Division (LPDD) provides programs to train and develop VBA leaders</li>
+            <li style="margin-top: 10px;">Training Management Division (TMD) provides learning system support for assigned actions outside the other divisions’ responsibilities and for Chief Learning Officer’s initiatives</li>
+        </ul>
+
+
+
+
+
+
+
+
+</div>
+
+@section scripts
+    {
+    <script language="javascript">
+        $(document).ready(function () {
+            var $lft = $(".indxLft");
+            var $rght = $(".indxRight");
+            var hl = $lft.height();
+            var hr = $rght.height();
+            var bp;
+
+            if (hl > hr) {
+
+                $rght.height(hl);
+
+            } else if (hr > hl) {
+                bp = hr - hl;
+                $lft.height(hr);
+                $lft.css("background-position-y", bp);
+            }
+
+        });
+
+    </script>
+
+}

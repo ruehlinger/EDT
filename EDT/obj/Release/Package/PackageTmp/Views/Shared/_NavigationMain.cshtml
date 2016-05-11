@@ -1,0 +1,45 @@
+﻿
+
+<ul id="nav" role="navigation">
+
+
+    <li style="min-width: 191px; text-align: center; ">
+        <a href="http://vaww.va.gov/default.asp" target="_blank" aria-haspopup="true" aria-owns="accessible" aria-controls="accessible"
+           aria-expanded="false" class="open" tabindex="0">VA Intranet Home</a>
+
+    </li>
+    <li style="min-width: 191px; text-align: center; ">
+        <a href="http://www.va.gov/about_va/" target="_blank">
+            About VA
+        </a>
+
+    </li>
+    <li style="min-width: 191px; text-align: center; ">
+        <a href="http://vaww.va.gov/landing_organizations.htm" target="_blank">
+            Organizations
+        </a>
+
+    </li>
+
+    <li style="min-width: 191px; text-align: center; ">
+        <a href="http://vaww.va.gov/directory/" target="_blank">Locations</a>
+
+    </li>
+    <li style="min-width: 192px; text-align: center; ">
+        <a href="http://vaww.va.gov/landing_employee.htm" target="_blank">Employee Resources</a>
+
+    </li>
+
+
+</ul>
+
+@*@Html.EJ().Menu("nav").MenuType(MenuType.NormalMenu)*@
+<script type="text/javascript">
+    jQuery(function ($) {
+
+        $("#nav").ejMenu({
+            menuType: ej.menuType.NormalMenu,
+            orientation: ej.orientation.Horizontal
+        });
+    });
+</script>

@@ -1,0 +1,266 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+  <div class="indxLft2">
+        <div class="overview">
+            <br />
+            <h2>Training Resources</h2>
+            
+
+        </div>
+    </div>
+   
+
+
+<div class="pagecontent1">
+
+ 
+    <br />
+        <p class="breadcrumb"><a href="~/">Home</a> > Training Resources</p>
+
+    <h3>Training Resources by Service</h3>
+
+
+    <table style="border-style:solid; border-width:thin;" align="center">
+        <tr style="border-style:solid; border-width:thin;">
+            <td width="25%" style="border-style:solid; border-width:thin;" align="center"><b style="font-size: 0.9em;"><a href="http://vbaw.vba.va.gov/bl/27/index.html">Benefits Assistance Service</a></b></td>
+            <td width="25%" style="border-style:solid; border-width:thin;" align="center"><b style="font-size: 0.9em;"><a href="http://vbaw.vba.va.gov/bl/21/index.htm">Compensation Service</a></b></td>
+            <td width="25%" style="border-style:solid; border-width:thin;" align="center"><b style="font-size: 0.9em;"><a href="http://edutraining.vba.va.gov/index.htm">Education Service</a></b></td>
+            <td width="25%" style="border-style:solid; border-width:thin;" align="center"><b style="font-size: 0.9em;"><a href="http://vbaw.vba.va.gov/bl/29/index.htm">Insurance Service</a></b></td>
+        </tr>
+        <tr>
+            <td style="border-style:solid; border-width:thin;" align="center">
+                <a href="http://vbaw.vba.va.gov/BAS/quality-training/training/index.asp">Training</a> <br />
+                <a href="http://vbaw.vba.va.gov/BAS/quality-training/training/index.asp">Training Schedules</a><br />
+                <a href="http://vbaw.vba.va.gov/BAS/quality-training/quality/index.asp">Quality</a><br />
+                <a href="http://vbaw.vba.va.gov/BAS/quality-training/training/index.asp">Videos</a><br />
+                &nbsp;
+            </td>
+
+
+
+            <td style="border-style:solid; border-width:thin;" align="center">
+                <a href="http://cptraining.vba.va.gov/C&P_Training/Index.htm">Training</a><br />
+                <a href="http://cptraining.vba.va.gov/C&P_Training/Trng_Plans/TP_RVSR.htm">Training Plans</a><br />
+                <a href="http://cptraining.vba.va.gov/C&P_Training/Job_Aids/Medical_EPSS.htm">Medical EPSS</a><br />
+                <a href="http://cptraining.vba.va.gov/C&P_Training/Tng_Video.htm">Videos</a><br />
+                &nbsp;
+            </td>
+
+
+
+
+
+            <td style="border-style:solid; border-width:thin;" align="center">
+                <a href="http://edutraining.vba.va.gov/tpss_tims.htm">Training</a><br />
+                <a href="http://edutraining.vba.va.gov/job_aids.htm">Job Aids</a><br />
+                <a href=" http://vbaw.vba.va.gov/bl/22/Job_Aids/Job_Aids.html">Chapter 33 Job Aids</a><br />
+                &nbsp;<br />
+                &nbsp;
+            </td>
+
+
+
+
+            <td style="border-style:solid; border-width:thin;" align="center">
+                <a href="http://vbaw.vba.va.gov/bl/29/Training_Procedures.html">Training and Procedures</a><br />
+                <a href="http://vbaw.vba.va.gov/bl/29/Publications.html">Publications and Directives</a><br />
+                <a href="http://vbaw.vba.va.gov/bl/29/data.html">Data and Statistics</a>
+            </td>
+        </tr>  
+
+
+        <tr>
+            <td width="25%" style="border-style:solid; border-width:thin;" align="center"><b style="font-size: 0.9em;"><a href="http://vbaw.vba.va.gov/bl/26/index.htm">Loan Guaranty (LGY) Service</a></b></td>
+            <td width="25%" style="border-style:solid; border-width:thin;" align="center"><b style="font-size: 0.9em;"><a href="http://vbaw.vba.va.gov/pensionandfiduciary/">Pension and Fiduciary (P&F) Service</a></b></td>
+            <td width="25%" style="border-style:solid; border-width:thin;" align="center"><b style="font-size: 0.9em;"><a href="http://vbaw.vba.va.gov/bl/28/vrcintra.htm">Vocational, Rehabilitation, and Employment (VR&E) Service</a></b></td>
+            <td width="25%" style="border-style:solid; border-width:thin;" align="center"><b style="font-size: 0.9em;">&nbsp;</b></td>
+        </tr>
+        <tr>
+            <td style="border-style:solid; border-width:thin;" align="center">
+                <a href="http://vbaw.vba.va.gov/bl/26/pick-module.htm">Training</a><br />
+                <a href="http://vbaw.vba.va.gov/bl/26/sitevisit.htm">Site Visits</a><br />
+                &nbsp; <br />
+                &nbsp;
+                <!--<a href="#">Quality</a><br />
+                <a href="#">Videos</a>-->
+            </td>
+
+
+
+            <td style="border-style:solid; border-width:thin;" align="center">
+                <a href="http://vbaw.vba.va.gov/PENSIONANDFIDUCIARY/pension/index.asp">Pension Service</a><br />
+                <a href="http://cptraining.vba.va.gov/C&P_Training/">Training</a><br />
+                <a href="http://vbaw.vba.va.gov/bl/21/data/quality/qa_home.htm">Quality Assurance</a><br />
+                <a href="http://cptraining.vba.va.gov/C&P_Training/FE/FE_Products.htm">Fiduciary/FE Training</a><br />
+                &nbsp;
+            </td>
+
+
+
+            <td style="border-style:solid; border-width:thin;" align="center">
+                <a href="http://vretraining.vba.va.gov/">Training</a><br />
+                <a href="http://vretraining.vba.va.gov/CRC.htm">CRC Information</a><br />
+                <a href="http://vretraining.vba.va.gov/epss.htm">EPSS</a><br />
+                    <!--<a href="#">Videos</a><br />-->
+                    <a href="~/Home/OutbasedVideos">Out-based Employee Videos</a>
+
+</td>
+            <td style="border-style:solid; border-width:thin;" align="center">
+                &nbsp;
+
+            </td>
+        </tr>
+    </table>
+
+
+
+
+    <!--<div class="row">
+
+        <div class="col-lg-3">
+
+            <p>
+                <b style="font-size: 0.9em; margin-left: -25px;"><a href="http://vbaw.vba.va.gov/bl/27/index.html">Benefits Assistance Service</a></b>
+                <ul style="margin-left: -10px;">
+                    <li><a href="http://vbaw.vba.va.gov/BAS/quality-training/training/index.asp">Training</a></li>
+                    <li><a href="http://vbaw.vba.va.gov/BAS/quality-training/training/index.asp">Training Schedules</a></li>
+                    <li><a href="http://vbaw.vba.va.gov/BAS/quality-training/quality/index.asp">Quality</a></li>
+                    <li><a href="http://vbaw.vba.va.gov/BAS/quality-training/training/index.asp">Videos</a></li>
+                </ul>
+            </p>
+
+        </div>
+        <div class="col-lg-3">
+
+            <p><b style="font-size: 0.9em;"><a href="http://vbaw.vba.va.gov/bl/21/index.htm">Compensation Service</a></b></p>
+            <ul style="margin-left: -10px;">
+                <li><a href="http://cptraining.vba.va.gov/C&P_Training/Index.htm">Training</a></li>
+                <li><a href="http://cptraining.vba.va.gov/C&P_Training/Trng_Plans/TP_RVSR.htm">Training Plans</a></li>
+                <li><a href="http://cptraining.vba.va.gov/C&P_Training/Job_Aids/Medical_EPSS.htm">Medical EPSS</a></li>
+                <li><a href="http://cptraining.vba.va.gov/C&P_Training/Tng_Video.htm">Videos</a></li>
+            </ul>
+
+        </div>
+        <div class="col-lg-3">
+
+            <p><b style="font-size: 0.9em;"><a href="http://edutraining.vba.va.gov/index.htm">Education Service</a></b></p>
+            <ul style="margin-left: -10px;">
+                <li><a href="http://edutraining.vba.va.gov/tpss_tims.htm">Training</a></li>
+                <li><a href="http://edutraining.vba.va.gov/job_aids.htm">Job Aids</a></li>
+                <li><a href=" http://vbaw.vba.va.gov/bl/22/Job_Aids/Job_Aids.html">Chapter 33 Job Aids</a></li>
+
+            </ul>
+
+        </div>
+        <div class="col-lg-3">
+
+            <p><b style="font-size: 0.9em;"><a href="http://vbaw.vba.va.gov/bl/29/index.htm">Insurance Service</a></b></p>
+            <ul style="margin-left: -10px;">
+                <li><a href="http://vbaw.vba.va.gov/bl/29/Training_Procedures.html">Training and Procedures</a></li>
+                <li><a href="http://vbaw.vba.va.gov/bl/29/Publications.html">Publications and Directives</a></li>
+                <li><a href="http://vbaw.vba.va.gov/bl/29/data.html">Data and Statistics</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+<br />
+    <div class="row">
+
+        <div class="col-lg-4">
+
+            <p><b style="font-size: 0.9em;"><a href="http://vbaw.vba.va.gov/bl/26/index.htm">Loan Guaranty (LGY) Service</a></b></p>
+            <ul>
+                <li><a href="http://vbaw.vba.va.gov/bl/26/pick-module.htm">Training</a></li>
+                <li><a href="http://vbaw.vba.va.gov/bl/26/sitevisit.htm">Site Visits</a></li>
+                <li><a href="#">Quality</a></li>
+                <li><a href="#">Videos</a></li>
+            </ul>
+
+        </div>
+        <div class="col-lg-4">
+
+            <p><b style="font-size: 0.9em;"><a href="http://vbaw.vba.va.gov/pensionandfiduciary/">Pension and Fiduciary (P&F) Service</a></b></p>
+            <ul>
+                <li><a href="http://vbaw.vba.va.gov/PENSIONANDFIDUCIARY/pension/index.asp">Pension Service</a></li>
+                <li><a href="http://cptraining.vba.va.gov/C&P_Training/">Training</a></li>
+                <li><a href="http://vbaw.vba.va.gov/bl/21/data/quality/qa_home.htm">Quality Assurance</a></li>
+                <li><a href="http://cptraining.vba.va.gov/C&P_Training/FE/FE_Products.htm">Fiduciary/FE Training</a></li>
+            </ul>
+
+        </div>
+        <div class="col-lg-4">
+
+            <p><b style="font-size: 0.9em;"><a href="http://vbaw.vba.va.gov/bl/28/vrcintra.htm">Vocational, Rehabilitation, and Employment (VR&E) Service</a></b></p>
+            <ul>
+                <li><a href="http://vretraining.vba.va.gov/">Training</a></li>
+                <li><a href="http://vretraining.vba.va.gov/CRC.htm">CRC Information</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="~/Home/OutbasedVideos">Out-based Employee Videos</a></li>
+
+            </ul>
+
+        </div>
+
+
+    </div>-->
+
+    <h3>Skills Certification</h3>
+
+    <br />
+
+    <p>The VBA Skills Certification tests  are available for the following positions:</p>
+
+    <p><u><b>Compensation Service</b></u></p>
+
+        <ul>
+            <li>VSR: <a href="http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/VSR.htm">http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/VSR.htm</a></li>
+            <li>SR. VSR: <a href="http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/SRVSR.htm">http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/SRVSR.htm</a> </li>
+            <li>PMC VSR &VCE: <a href="http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/PMC_VSR_VCE.htm">http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/PMC_VSR_VCE.htm</a> </li>
+            <li>JRVSR: <a href="http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/JRVSR.htm">http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/JRVSR.htm</a> </li>
+            <li>DRO: <a href="http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/DRO.htm">http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/DRO.htm</a></li>
+            <li>Coach (SVSR): <a href="http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/Coach_SVSR.htm">http://cptraining.vba.va.gov/C&P_Training/Skills_Cert/Coach_SVSR.htm</a> </li>
+        </ul>
+    <p><u><b>VR&amp;E</b></u></p>
+    <p>VRC Readiness Guide: <a href="https://skillcert.camber.com/Docs/ReadinessGuide_VRE.pdf">https://skillcert.camber.com/Docs/ReadinessGuide_VRE.pdf</a></p>
+
+
+
+    </div>
+
+    @section scripts
+    {
+        <script language="javascript">
+            $(document).ready(function() {
+                var $lft = $(".indxLft");
+                var $rght = $(".indxRight");
+                var hl = $lft.height();
+                var hr = $rght.height();
+                var bp;
+
+                if (hl > hr) {
+
+                    $rght.height(hl);
+
+                } else if (hr > hl) {
+                    bp = hr - hl;
+                    $lft.height(hr);
+                    $lft.css("background-position-y", bp);
+                }
+
+            });
+
+        </script>
+
+    }

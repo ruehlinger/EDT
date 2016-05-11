@@ -1,0 +1,53 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+    <div class="indxLft2">
+        <div class="overview">
+            <h2>FAQS</h2>
+            <br />
+            <p>
+                Answers to commonly asked questions.
+            </p>
+        </div>
+    </div>
+   
+
+
+<div class="pagecontent1">
+
+   
+    </div>
+
+    @section scripts
+    {
+        <script language="javascript">
+            $(document).ready(function() {
+                var $lft = $(".indxLft");
+                var $rght = $(".indxRight");
+                var hl = $lft.height();
+                var hr = $rght.height();
+                var bp;
+
+                if (hl > hr) {
+
+                    $rght.height(hl);
+
+                } else if (hr > hl) {
+                    bp = hr - hl;
+                    $lft.height(hr);
+                    $lft.css("background-position-y", bp);
+                }
+
+            });
+
+        </script>
+
+    }

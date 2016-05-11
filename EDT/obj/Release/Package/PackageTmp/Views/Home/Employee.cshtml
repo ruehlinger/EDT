@@ -1,0 +1,104 @@
+﻿using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+   <!-- <div class="indxLft2">
+        <div class="overview">
+            <h2>Calendar</h2>
+            <br />
+            <p>
+                The Calendar page hosts events that are upcoming
+            </p>
+        </div>
+    </div>-->
+   
+
+
+<div class="pagecontent1">
+
+ 
+    <br />
+        <p>Home > My Role Is > Employee</p>
+
+    <h3>Your Role:</h3>
+
+    <p>VBA is committed to hiring, retaining, and promoting competent employees. To accomplish this mission, each service has defined its critical positions and the associated technical competencies. These competencies, and the associated profiles, identify the knowledge, skills, and abilities (KSAs) that lead to competent performance.  You should become familiar with the competencies for your position and the associated tools and resources that can provide the support you need to gain the required KSAs and advance your VBA career.</p>
+
+
+    <p>
+        As a VBA employee, it is your responsibility to: 
+
+    </p>
+    <ul>
+        <li>Become familiar with the competencies for your position</li>
+        <li>Complete a diagnostic assessment</li>
+        <li>Compete remedial or refresher training </li>
+        <li>Communicate your training needs to your training manager </li>
+    </ul>
+
+    <h4><a href="#">EDT Checklist</a></h4>
+
+    <p>The checklist provides a list of the items that should be completed by the employee as part of the VBAs Competency-based Training System. </p>
+
+
+    <h4><a href="~/Home/TrainingRoadmap/">Training Roadmap</a></h4>
+
+    <p>This page provides a list of training topics that are aligned with the position-specific competencies.
+    </p>
+
+    <h4><a href="#">TMS</a></h4>
+
+    <p>Access TMS to do the following: </p>
+    <ul>
+        <li>Take a diagnostic assessment</li>
+        <li>Review Individual Feedback Report</li>
+        <li>Assess training for remediation</li>
+        <li>Review training progress</li>
+    </ul>
+
+
+
+    <p>This section will contain information about updates and modifications to diagnostic assessments.</p>
+
+    <h4><a href="#">Skills Certification Announcements</a></h4>
+
+    <h4><a href="#">Forms</a></h4>
+
+
+
+
+
+    </div>
+
+    @section scripts
+    {
+        <script language="javascript">
+            $(document).ready(function() {
+                var $lft = $(".indxLft");
+                var $rght = $(".indxRight");
+                var hl = $lft.height();
+                var hr = $rght.height();
+                var bp;
+
+                if (hl > hr) {
+
+                    $rght.height(hl);
+
+                } else if (hr > hl) {
+                    bp = hr - hl;
+                    $lft.height(hr);
+                    $lft.css("background-position-y", bp);
+                }
+
+            });
+
+        </script>
+
+    }

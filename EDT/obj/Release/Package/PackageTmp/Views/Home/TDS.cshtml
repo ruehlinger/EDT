@@ -1,0 +1,120 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+  <div class="indxLft2">
+        <div class="overview">
+            
+            <br />
+            <h2>Training Development Support</h2>
+            <p style="margin-top: 5px">(Training Checklists, Templates and Forms)</p>
+            
+
+        </div>
+    </div>
+   
+
+
+<div class="pagecontent1">
+
+ 
+    <br />
+        <p class="breadcrumb"><a href="~/">Home</a> > Training Development Support</p>
+
+    <div role="tabpanel">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" style="text-wrap:normal !important;">Training Checklists</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Training Templates</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Specification/Reports</a></li>
+            <!--<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Tab 4</a></li>-->
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                <br />
+                <ul>
+                    <li>
+                        <a href="~/Documents/Standardized_VBA_Training_Development_Checklist_LongForm_121914.pdf" target="_blank">VBA Standardized Training Development Checklist (long form)</a>  (Updated: 01/09/15)
+                    </li>
+                    <li>
+                       <a href="~/Documents/Standardized_VBA_Training_Development_Checklist_ShortForm_121914.pdf" target="_blank">VBA Standardized Training Development Checklist (short form)</a> (Updated: 01/09/15)
+                    </li>
+
+                </ul>
+</div>
+            <div role="tabpanel" class="tab-pane fade" id="profile">
+                <br />
+                <ul>
+                    <li>
+                        <a href="~/Documents/Standardized_Training_Lesson Plan_Template_121914.pdf" target="_blank">VBA Standardized Training Lesson Plan Template</a> (Updated: 01/09/15)
+                    </li>
+                    <li>
+                        <a href="~/Documents/Standardized_Training_Template_121914.pptx" target="_blank">VBA Standardized Training Template</a> (Updated: 01/09/15)
+                    </li>
+                    <li>
+                        <a href="~/Documents/Standardized_WBT_TemplateOct2014.jpg" target="_blank">VBA Standardized WBT Template</a> (Updated: 01/09/15)
+                    </li>
+                    <li>
+                        <a href="~/Documents/Training GUI_Standardized_Specifications_Document_121914.pdf" target="_blank">VBA Standardized Online Training GUI Specifications Document</a> (Updated: 01/09/15)
+                    </li>
+
+                    <li>
+                        <a href="~/Documents/Standardized_Training_Lesson Plan_Sample_121914.pdf" target="_blank">VBA Standardized Training Lesson Plan Sample</a> (Updated: 01/09/15)
+                    </li>
+                </ul>
+
+
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="messages">
+                <br />
+            <ul>
+                <li>
+                <a href="~/Documents/Standardized_Training_Summary_Report_121814.pdf" target="_blank">VBA Standardized Training Summary Report</a> (Updated: 01/09/15)
+                </li>
+            </ul>
+
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
+        </div>
+
+    </div>
+   
+
+
+    </div>
+
+    @section scripts
+    {
+        <script language="javascript">
+            $(document).ready(function() {
+                var $lft = $(".indxLft");
+                var $rght = $(".indxRight");
+                var hl = $lft.height();
+                var hr = $rght.height();
+                var bp;
+
+                if (hl > hr) {
+
+                    $rght.height(hl);
+
+                } else if (hr > hl) {
+                    bp = hr - hl;
+                    $lft.height(hr);
+                    $lft.css("background-position-y", bp);
+                }
+
+            });
+
+        </script>
+
+    }

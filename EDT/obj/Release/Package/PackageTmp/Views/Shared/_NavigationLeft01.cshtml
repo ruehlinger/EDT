@@ -1,0 +1,59 @@
+﻿
+
+<ul id="vertical">
+    
+    <li class="demoVertical">
+        <a href="#">Competency-based Training Systems</a>
+        <!--<ul>
+
+            <li><a href="~/Home/Smt/">VSR</a></li>
+            <li><a href="~/Home/Nssst/">RVSR</a></li>
+        </ul>-->
+    </li>
+
+    <li class="demoVertical">
+        <a href="#">Veterans Service Representative (VSR)</a>
+        <!--<ul>
+            
+            <li><a href="~/Home/Smt/">VSR</a></li>
+            <li><a href="~/Home/Nssst/">RVSR</a></li>
+        </ul>-->
+    </li>
+    <li class="demoVertical">
+        <a href="#">Rating Veterans Service Representative <br /> (RVSR)</a>
+        <!--<ul>
+            <li><a href="~/Home/Elcp/">Executive Leadership Coaching Program (ELCP)</a></li>
+            <li><a href="~/Home/ADDPProgram/">Assistant Director Development Program (ADDP)</a></li>
+            <li><a href="#">Station Leadership Development Training (SLDP)</a></li>
+            <li><a href="~/Home/Elp/">Emerging Leaders Program (ELP)</a></li>
+            <li><a href="~/Home/Pmf/">Presidential Management Fellows Program (PMF)</a></li>
+            <li><a href="~/Home/LeadProgram/">Leadership Enhancement and Development Program (LEAD)</a></li>
+            <li><a href="~/Home/Leap/">Leadership Enrichment and Progression Program (LEAP)</a></li>
+        </ul>-->
+
+    </li>
+    <li class="demoVertical">
+        <a href="#">Pension Management Center Veterans <br />Service  Representative (PMC VSR)</a>
+        <!--<ul>
+            <li><a href="~/Home/SesCdp/">Senior Executive Services Development Program (SESCDP)</a></li>
+            <li><a href="#">Lunch & Learn Professional Development Series (LLPDS)</a></li>
+        </ul>-->
+    </li>
+   
+    @*<li><a href="~/Home/DropdownlistFeatures/">Test Link</a></li>*@
+</ul>
+
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#vertical").ejMenu({
+            menuType: ej.menuType.NormalMenu,
+            orientation: ej.orientation.Vertical,
+            width: 225,
+            height: 548
+        });
+        
+        $("#vertical li a[href*=#]:last-child ").css("color", "white");
+        //$("#vertical li:last-child a[href*=#]").css("color", "grey");
+    });
+</script>

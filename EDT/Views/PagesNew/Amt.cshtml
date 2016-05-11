@@ -1,0 +1,82 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+
+
+}
+
+<div class="indxLft2">
+    <div class="overview">
+        <h2>OVERVIEW</h2>
+        <p>
+            The Advanced Management Training (AMT) Program is a one week residential, instructor-led cohort training program designed for newly appointed Senior & Division Level Managers; it is conducted at the Veterans Benefits Administration (VBA) Professional Development Academy in Baltimore, Maryland.  AMT provides VBA Senior Managers with the advanced knowledge, tools, and skills needed to achieve success in accomplishing their designated duties and responsibilities.  A pre- and post-test is administered to assess the degree of learning.
+        </p>
+        
+    </div>
+
+
+</div>
+<div class="indxRight">
+    <div class="learning_objectives">
+        <h2>Learning Objectives</h2>
+        <ul class="list-unstyled">
+            <li>
+                Provide advanced knowledge, tools and skills essential for new VBA senior-level supervisors.
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<div id="subcontent" class="collapse in">
+    <div class="pagecontent">
+
+
+        <h3>Curriculum:</h3>
+
+        <p>♦ Managment Matters ♦ Budget Process ♦ Executive Level Briefing Techniques ♦ Advanced Human Resource Management: Staffing and Recruitment  ♦ Advanced Labor Relations (LR) ♦ Employee Relations (ER)</p>
+
+        <h3>Requirements:</h3>
+
+        <p>♦ Complete the pre-course writing assignment. <br />♦ Complete the week of Residential training. </p>
+
+        <h3>Contact Us:</h3>
+
+        <p>For more information please contact the AMT Program Manager, Cheryl Sherrell, at 410-230-4450.</p>
+
+    </div>
+</div>
+@section scripts
+    {
+    <script language="javascript">
+        $(document).ready(function () {
+            var $lft = $(".indxLft2");
+            var $rght = $(".indxRight");
+            var hl = $lft.height();
+            var hr = $rght.height();
+            var bp;
+
+            if (hl > hr) {
+
+                $rght.height(hl);
+
+            } else if (hr > hl) {
+                bp = hr - hl;
+                $lft.height(hr);
+                $lft.css("background-position-y", bp);
+            }
+
+        });
+
+    </script>
+
+}

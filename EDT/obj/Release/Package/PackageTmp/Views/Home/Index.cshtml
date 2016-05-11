@@ -1,0 +1,296 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+
+
+}
+
+<div id="chevrons" style="margin-right: -220px !important; width: 736px;">
+    <div class="welcomeBar">
+        <span style="font-size: 16px;">**BETA VERSION** Please complete the website review <a href="https://www.ttande.org/evaluation/uniserv_level1/form/default.asp?cid=853" style="color: #F00 !important;" target="_blank">form</a></span>
+
+    </div>
+
+
+</div>
+
+
+
+    <div id="tier2gallery">
+        <!-- begin apple images gallery-->
+        <div id="gallery">
+            <!-- begin apple images gallery-->
+            <div id="slides" aria-live="polite">
+                <!--images and caption in blue box-->
+
+                <div>
+                    <!-- SLIDE 1 -->
+                    <a name="slide1"></a>
+                    <div class="slide">
+                        <a href="#"><img src="~/Images/slider_1.png" width="500" height="275" alt="ED&T Logo"></a>
+                        <div class="description">
+                            <span id="slide1"></span>
+
+                            <p class="slide_desc">Welcome to the new ED&T website. The website has been fully re-designed to provide a “one-stop” shop for training information and resources. Please, have a look around. We welcome your feedback.<br /><br /><a href="~/Home/Welcome" title="Learn More">Learn about the new website. »</a></p>
+                        </div>
+                    </div>
+                </div><!-- end SLIDE 1 -->
+
+                <div>
+                    <!-- SLIDE 2 -->
+                    <a name="slide2"></a>
+                    <div class="slide">
+                        <a href="#"><img src="~/Images/slider_2.png" width="500" height="276" alt="man standing in front of coworkers pointing at a easel with white notepad"></a>
+                        <div class="description">
+                            <span id="slide2"></span>
+                            <!--<h2>What is the Competence-based Training System (EDT)?</h2>-->
+                            <p class="slide_desc">
+                                Employee Development and Training (ED&T) develops high-performing leaders and employees through a systematic and efficient approach to workforce development and effective business partnerships in support of VBA’s Mission.
+                                <br /><br /><a href="~/Home/Mission" title="Learn More">Learn more about our mission. »</a></p>
+                        </div>
+                    </div>
+                </div><!-- end SLIDE 2 -->
+
+                <div>
+                    <!-- SLIDE 3 -->
+                    <a name="slide3"></a>
+                    <div class="slide">
+                        <a href="#"><img src="~/Images/slider_3.png" width="500" height="276" alt="The logo for EDT. A circle with 5 items around it. Employee Goals, VBA Goals, Training, Assessment and Feedback. In the center it reads VBA Competency-Based Training System."></a>
+                        <div class="description">
+                            <span id="slide3"></span>
+                            <!--<h2>What is the Dianostic Assessment?</h2>-->
+                            <p>ED&T is organized in four divisions to support training functions within VBA:  ED&T Office of the Director, Technical Training and Evaluation (TTE), Leadership and Professional Development (LPDD), and the Training Management Division (TMD). </p> <p><a href="~/Home/About">Learn more about our divisions. »</a></p>
+                        </div>
+                    </div>
+                </div><!-- end SLIDE 3 -->
+
+                <div>
+                    <!-- SLIDE 4 -->
+                    <a name="slide4"></a>
+                    <div class="slide">
+                        <a href="#"><img src="~/Images/slider_4.png" width="500" height="276" alt="a group of 3d human figures standing together forming an arrow. the figure at the point is red."></a>
+                        <div class="description">
+                            <span id="slide4"></span>
+                            <!--<h2>What is my Role?</h2>-->
+                            <p class="slide_desc" style="margin-top: -26px;">The Office of Employee Development and Training (ED&T) is hosting a symposium for VBA Training Managers from May 11 – May 15, 2015 in Florida. To register for the symposium, click <a href="https://www.ttande.org/evaluation/uniserv_level1/form/default.asp?cid=857" target="_blank">here</a></p> <hr style="margin-top:-5px;" /><p class="slide_desc" style="margin-top: -10px;">VBA is now a member of the Treasury Executive Institute (TEI), which is a training Center of Excellence that provides leadership, management, and public sector training.</p> <p style="margin-top: -10px;"><a href="~/Home/WhatsNew">More News »</a></p>
+
+                        </div>
+                    </div>
+                </div><!-- end SLIDE 4 -->
+            </div><!--close slides-->
+            <div id="menu">
+                <ul>
+                    <!--nav button labels on image slider-->
+                    <li class="menuItem"><a href="#slide1" title="Welcome!">Welcome!</a></li>
+                    <li class="menuItem"><a href="#slide2" title="Mission">Mission</a></li>
+                    <li class="menuItem"><a href="#slide3" title="ED&T">ED&T Divisions</a></li>
+                    <li class="menuItem"><a href="#slide4" title="What's New">What's New</a></li>
+                </ul>
+            </div><!--close menu-->
+            <div id="slider-controls">
+                <a href="#" onclick="stopMainSlider()"><img src="~/Images/bt_pause_s2.png" alt="Pause" width="20" height="20" id="pause"></a>
+                <a href="#" onclick="startMainSlider()"><img src="~/Images/bt_play_s2.png" alt="Play" width="20" height="20" id="play"></a>
+            </div><!-- end Slider Controla -->
+            <div style="clear:both"></div>
+        </div><!--close gallery-->
+    </div><!--End tier2 gallery -->
+
+<!--TODO: TILES -->
+<section id="tiles" style="margin-top: -27px; margin-right: -222px; ">
+    <dl class="content-tiles border-around">
+
+        <dt class="metro-header"><a href="~/Home/TDS">Training Development Support</a></dt>
+        <dd id="content-1" style="background: url('@Url.Content("~/Images/tileInstructorDevelopment.png")') no-repeat;">
+            <div class="fdw-background"><a href="~/Home/TDS">Training development support contains training templates, checklists, and forms for developing training.</a></div>
+            @*Tile •  con2-2*@
+        </dd>
+        <dt class="metro-header"><a href="http://hvnc.gdit.com/lc/" target="_blank">VBA Learning Catalog</a></dt>
+        <dd id="content-2" style="background: url('@Url.Content("~/Images/tileVideoTour.png")') no-repeat;">
+            <div class="fdw-background"><a href="http://hvnc.gdit.com/lc/" target="_blank">The VBA Learning Catalog provides a resource that can be used to search for existing VBA training. </a></div>
+            @*Tile •  con2-2*@
+        </dd>
+
+    </dl>
+    <dl class="content-tiles border-around">
+
+        <dt class="metro-header"><a href="https://orlandottl.camber.com/VBALPDD" target="_blank">Leadership Programs</a></dt>
+        <dd id="content-3" style="background: url('@Url.Content("~/Images/tileTrainingSched.png")') no-repeat;">
+            <div class="fdw-background"><a href="https://orlandottl.camber.com/VBALPDD" target="_blank">LPDD is a training enterprise that provides instruction, program design/development, and professional development to all VBA employees.</a></div>
+            @*Tile •  con2-1*@
+        </dd>
+        <dt class="metro-header"><a href="https://www.ttande.org/EvaluationPortal/" target="_blank">Evaluation Portal</a></dt>
+        <dd id="content-4" style="background: url('@Url.Content("~/Images/tileHRM01.png")') no-repeat;">
+            <div class="fdw-background"><a href="https://www.ttande.org/EvaluationPortal/" target="_blank">The Evaluation Portal provides access to evaluation dashboards, student survey responses, and the workforce development campaign dashboard. </a></div>
+            @*Tile •  con2-1*@
+        </dd>
+    </dl>
+    <dl class="content-tiles border-around">
+
+        <dt class="metro-header"><a href="~/Home/VirtualSchoolhouse">VBA Virtual Schoolhouse</a></dt>
+        <dd id="content-5" style="background: url('@Url.Content("~/Images/tileSupervisorGuide02.png")') no-repeat;">
+            <div class="fdw-background"><a href="~/Home/VirtualSchoolhouse">VBA Virtual Schoolhouse is a centralized classroom environment for VBA employees and instructors.</a></div>
+            @*Tile •  con2*@
+        </dd>
+        
+            <dt class="metro-header" style="text-transform:uppercase;"><a href="https://www.ttande.org/VBATMRC/" target="_blank">TM Resource Center</a></dt>
+            <dd id="content-6" style="background: url('@Url.Content("~/Images/tileSubmitComment.jpg")') no-repeat;">
+                <div class="fdw-background"><a href="https://www.ttande.org/VBATMRC/" target="_blank">The TMRC provides jobs aids and training resources for all training managers.</a></div>
+                @*Tile •  con2*@
+            </dd>
+        
+</dl>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!--///////////////// CAROUSEL ///////////////
+    <div class="carousel slide" id="theCarousel"
+         data-interval="10000" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#theCarousel" data-slide-to="0"
+                class="active"></li>
+            <li data-target="#theCarousel" data-slide-to="1">
+            </li>
+            <li data-target="#theCarousel" data-slide-to="2">
+            </li>
+            <li data-target="#theCarousel" data-slide-to="3">
+            </li>
+            <li data-target="#theCarousel" data-slide-to="4">
+            </li>
+            <li data-target="#theCarousel" data-slide-to="5">
+            </li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+
+                    <img src="/Images/Staff/WashingtonDC/slide_1.png" alt="Competency Model"
+                         class="img-responsive" />
+     
+                <!--<div class="carousel-caption">
+                    <h4>Aaron M. Lee</h4>
+                    <p>Assistant Director ED&T</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Images/Staff/WashingtonDC/DerekLambert.jpg" alt="Derek Lambert, Chief Leadership Development"
+                     class="img-responsive" />
+                <div class="carousel-caption">
+                    <h4>Derek Lambert</h4>
+                    <p>Chief Leadership Development</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Images/Staff/WashingtonDC/OnikaCoke.jpg" alt="Onika Coke-Muñoz, Chief Professional Development"
+                     class="img-responsive" />
+                <div class="carousel-caption">
+                    <h4>Onika Coke-Muñoz</h4>
+                    <p>Chief Professional Development</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Images/Staff/WashingtonDC/JohnDominick.jpg" alt="John D. Dominick, Senior Program Manager"
+                     class="img-responsive" />
+                <div class="carousel-caption">
+                    <h4>John D. Dominick</h4>
+                    <p>Senior Program Manager</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Images/Staff/WashingtonDC/AboladeThomas-Nibblett.jpg" alt="Abolade Thomas-Nibblett, Senior Program Manager"
+                     class="img-responsive" />
+                <div class="carousel-caption">
+                    <h4>Abolade Thomas-Nibblett</h4>
+                    <p>Senior Program Manager</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Images/Staff/WashingtonDC/JamieGerwitz.jpg" alt="Jamie Gerwitz, Program Manager"
+                     class="img-responsive" />
+                <div class="carousel-caption">
+                    <h4>Jamie Gerwitz</h4>
+                    <p>Program Manager</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#theCarousel" class="left carousel-control" 
+           data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" style="opacity: 0.4;"></span>
+
+        </a>
+        <a href="#theCarousel" class="carousel-control right"
+           data-slide="next" role="button">
+            <span class="glyphicon glyphicon-chevron-right" style="opacity: 0.4;">
+            </span>
+        </a>
+    </div>
+
+    <!--///////////////// CAROUSEL END ///////////////-->
+
+
+
+    <!--<div class="viewportContent">
+        <h2>OVERVIEW</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisl dolor, vulputate ac fringilla in, ultricies in sapien. Nullam ornare facilisis mauris, id vestibulum lorem vehicula posuere. Etiam orci urna, varius in risus non, ornare interdum mauris. Morbi auctor aliquam enim sit amet pellentesque. Praesent quam arcu, egestas ac mi id, gravida accumsan odio. Praesent sapien libero, euismod ut enim id, adipiscing porttitor velit. Morbi volutpat imperdiet lectus in malesuada.</p>
+    </div>-->
+
+<!--<div class="indxRight">
+    <div class="mission_header">
+        <p>MISSION</p>
+    </div>
+    <div class="mission_body">
+        <p>To provide relevant and useful developmental training to VBA employees who seek to enhance their individual development and who seek to increase their contribution to the Organization.</p>
+
+    </div>
+
+<div class="pagecontent">
+    <br />
+    <div class="pc_textlft">
+        <h1>Mission:</h1>
+        <p><strong>The mission of ED&T is to ensure that the Veterans Benefits Administration (VBA) develops, implements, and evaluates innovative learning programs and practices that promote a systematic and comprehensive approach to training and developing VBA employees in order to provide quality, seamless service to Veterans.</strong>
+</p>
+        <hr />
+ <p>The VBA Employee Development & Training (20M5) site is your primary VBA source for employee training schedules, information, policies and documentation. We also have links to other training related sites; within VBA, the VA as a whole, and on the Internet.</p>
+        <h1>Questions/Comments</h1>
+        <p>If you have any questions/comments about the site, or if there is other information that you think should be here, please contact VBA Employee Development & Training (20M5) at 202-461-9860.
+</p>
+    
+     </div>
+
+    <div class="pc_whatsnew">
+
+        <h1><span class="whats_new" style="text-align:center;">What's New</span></h1>
+
+        <p><strong>May 10, 2013</strong> -- The Division Leadership and Management Training (DLMT) Program is being replaced with Advanced Management Training (AMT) and the Introduction to Leadership (ILT) Program is being replaced with Supervisory & Management Training (SMT). New information about AMT and SMT will be posted on this website as it becomes available, in the Leadership Development section.</p>
+        <p><strong>October 01, 2012</strong> -- The VBA Learning Catalog is now available under the Technical Training & Evaluation left-hand menu.</p>
+        <p><strong>June 01, 2012</strong> -- New videos are available, for users who do not have CDN access, from the Available Videos page.
+</p>
+    </div>
+
+</div>-->
+ 
+
+
+
+@section scripts
+{
+
+
+}

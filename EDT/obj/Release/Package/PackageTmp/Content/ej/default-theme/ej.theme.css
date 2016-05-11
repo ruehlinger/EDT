@@ -1,0 +1,2364 @@
+/*!
+*  filename: ej.theme.css
+*  version : 11.2
+*  Copyright Syncfusion Inc. 2001 - 2013. All rights reserved.
+*  Use of this code is subject to the terms of our license.
+*  A copy of the current license can be obtained at any time by e-mailing
+*  licensing@syncfusion.com. Any infringement will be prosecuted under
+*  applicable laws. 
+*/
+
+/*-----------------------OLAP Definition-----------------*/
+/*Theme Color*/
+
+.e-grid.e-rtl .e-indentcell {
+  border-left-color: #c4c4c4;
+}
+.e-grid.e-rtl .e-headercell,
+.e-grid.e-rtl .e-grouptopleftcell {
+  border-right-color: #c4c4c4;
+  border-bottom-color: #c4c4c4;
+}
+/*..........................Skin css...........................*/
+
+.e-grid {
+  border-color: #c4c4c4;
+  color: #6d6d6d;
+  border-top: none;
+}
+.e-grid .e-gridcontent,
+.e-grid .e-form-container {
+  background-color: white;
+}
+.e-grid .e-groupdroparea {
+  background: #2382c3;
+  /* Old browsers */
+
+  border-top-color: #c4c4c4;
+  color: white;
+}
+.e-grid .e-cloneproperties {
+  color: white;
+  background: #2382c3;
+  /* Old browsers */
+
+  border-color: #c4c4c4;
+}
+.e-grid .e-groupcaption {
+  background-color: #f6f7f7;
+  border-color: #c4c4c4;
+}
+.e-grid .e-headercell-hover,
+.e-grid .e-groupheadercell:hover {
+  color: white;
+}
+.e-grid .e-groupheadercell {
+  color: #5c5c5c;
+  border-color: #c4c4c4;
+}
+.e-grid .e-alt_row {
+  background: #f6f7f7;
+}
+.e-grid .e-inlineform-titlebar {
+  border-color: #c4c4c4;
+  background-color: #f7f7f7;
+}
+.e-grid .e-indentcell,
+.e-grid .e-recordpluscollapse,
+.e-grid .e-recordplusexpand {
+  border-color: #c4c4c4;
+  background-color: #f6f7f7;
+}
+.e-grid .e-detailcell,
+.e-grid .e-detailrowcollapse,
+.e-grid .e-detailrowexpand,
+.e-grid tr.e-editedrow td.e-rowcell {
+  border-top-color: #c4c4c4;
+}
+.e-grid .e-detailindentcell {
+  border-right-color: #c4c4c4;
+}
+.e-grid td.e-active,
+.e-grid .e-form-titlebar {
+  background-color: #2382c3;
+  color: white;
+}
+.e-grid .e-inlineform-titlebar {
+  font-size: 14px;
+  color: #5c5c5c;
+}
+.e-grid .e-recordpluscollapse > div,
+.e-grid .e-detailrowcollapse > div {
+  background-color: transparent;
+}
+.e-grid .e-headercell,
+.e-grid .e-grouptopleftcell {
+  background: white;
+  /* Old browsers */
+
+  border-top-color: #c4c4c4;
+  border-left-color: #c4c4c4;
+  border-bottom-color: #169dd8;
+}
+.e-grid .e-grid-icon {
+  background: white;
+  /* Old browsers */
+
+}
+.e-grid .e-gridheader {
+  color: #5c5c5c;
+  border-bottom-color: #169dd8;
+  border-top-color: #c4c4c4;
+}
+.e-grid .e-headercontent {
+  border-right-color: #c4c4c4;
+}
+.e-grid.e-rtl .e-headercontent {
+  border-left-color: #c4c4c4;
+}
+.e-grid .e-editcell,
+.e-grid .e-form-container,
+.e-grid .e-externalformedit,
+.e-grid .e-tabletd,
+.e-grid .e-rowcell {
+  border-color: #c4c4c4;
+}
+.e-grid .e-form-togglebtn:hover {
+  background-color: #5eabde;
+}
+.e-grid .e-form-toggle-icon {
+  background-image: url(../common-images/icons-white.png);
+}
+.e-grid .e-filterbarcell,
+.e-grid .e-filterbarcelldisabled {
+  border-color: #c4c4c4;
+  background-color: white;
+  background-image: none;
+}
+.e-grid .e-grid-filterstatusbar,
+.e-grid .e-grid-filterstatusbarbottom {
+  background: #2382c3;
+  /* Old browsers */
+
+  border-color: #c4c4c4;
+}
+.e-grid .e-grid-filterstatusbar .e-msgdiv,
+.e-grid .e-grid-filterstatusbarbottom .e-msgdiv {
+  color: white;
+}
+.e-grid .e-groupdroparea.e-hover {
+  background: #5eabde;
+  /* Old browsers */
+
+}
+.e-grid tr.e-hover {
+  background-color: #5eabde;
+  color: white;
+}
+.e-grid .e-scrollcss {
+  background: white;
+  /* Old browsers */
+
+}
+.e-grid .e-headercell-hover,
+.e-grid .e-filtercell:hover,
+.e-grid .e-groupheadercell:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+}
+.e-grid .e-reorderindicate {
+  border-right-color: #2382c3;
+}
+.e-grid div.e-field-validation-error {
+  background-color: #fffe91;
+  color: #cd0a0a;
+}
+.e-grid div.e-error .e-toparrow {
+  border-bottom-color: #fffe92;
+}
+.e-ejinputtext {
+  border: 1px solid #bbbcbb;
+  outline: none;
+  background-color: white;
+  color: #5c5c5c;
+  vertical-align: baseline;
+}
+.e-ejinputtext:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.e-grid .e-summaryrow {
+  background-color: white;
+  border-color: #c4c4c4;
+}
+.e-grid .e-reSizeColbg {
+  border-left-color: #c4c4c4;
+}
+.e-grid .e-headercell-hover .e-ascending,
+.e-grid .e-groupheadercell:hover .e-ascending,
+.e-grid .e-headercell-hover .e-filtericon,
+.e-grid .e-headercell-hover .e-descending,
+.e-grid .e-headercell-hover .e-togglegroupbutton,
+.e-grid .e-groupheadercell:hover .e-descending,
+.e-grid .e-groupheadercell:hover .e-togglegroupbutton {
+  background-color: #5eabde;
+  background-image: url(../common-images/icons-white.png);
+}
+.e-grid .e-toolbar .e-hover .e-addnewitem,
+.e-grid .e-toolbar .e-hover .e-searchitem,
+.e-grid .e-toolbar .e-hover .e-edititem,
+.e-grid .e-toolbar .e-hover .e-deleteitem,
+.e-grid .e-toolbar .e-hover .e-saveitem,
+.e-grid .e-toolbar .e-hover .e-cancel,
+.e-grid .e-groupheadercell:hover .e-ungroupbutton,
+.e-grid .e-animatebutton {
+  background-image: url(../common-images/icons-white.png);
+}
+.e-grid .e-headercellactive,
+.e-grid .e-headercellactive span {
+  background: #2382c3;
+  /* Old browsers */
+
+  color: white;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+.e-grid.e-rtl .e-nextpage,
+.e-grid.e-rtl .e-nextpagedisabled {
+  border-left-color: #c4c4c4;
+}
+.e-pager,
+.e-grid .e-pagerstatusbar {
+  background-color: #ecedee;
+  border-color: #c4c4c4;
+  color: #6d6d6d;
+}
+.e-pager .e-spacing {
+  color: #6d6d6d;
+}
+.e-pager .e-numericitem:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+}
+.e-pager .e-numericitem {
+  background: #ecedee;
+  border-right-color: #c4c4c4;
+}
+.e-pager .e-prevpagedisabled,
+.e-pager .e-prevpage,
+.e-pager .e-nextpage,
+.e-pager .e-nextpagedisabled,
+.e-pager .e-lastpagedisabled,
+.e-pager .e-lastpage,
+.e-pager .e-firstpage,
+.e-pager .e-firstpagedisabled {
+  background-color: #ecedee;
+}
+.e-pager .e-nextpage:Hover,
+.e-pager .e-lastpage:Hover,
+.e-pager .e-firstpage:Hover,
+.e-pager .e-prevpage:Hover {
+  background-color: #5eabde;
+  background-image: url(../common-images/icons-white.png);
+}
+.e-pager .e-pagercontainer {
+  background-color: #ecedee;
+  border-color: #c4c4c4;
+}
+.e-pager .e-firstpage,
+.e-pager .e-prevpage,
+.e-pager .e-firstpagedisabled,
+.e-pager .e-prevpagedisabled,
+.e-pager .e-nextpage,
+.e-pager .e-lastpage,
+.e-pager .e-nextpagedisabled,
+.e-pager .e-lastpagedisabled {
+  border-right-color: #c4c4c4;
+}
+.e-pager .e-currentitem,
+.e-pager .e-currentitem:hover {
+  background: #2382c3;
+  /* Old browsers */
+
+  color: white;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- scrollbar -------------------------------------------*/
+
+.e-scroller,
+.e-scroller .e-content {
+  overflow: hidden;
+}
+.e-scroller .e-content,
+.e-scroller .e-hhandlespace,
+.e-scroller .e-hup,
+.e-scroller .e-hdown,
+.e-scroller.e-rtl .e-vscroll {
+  float: left;
+}
+.e-scroller .e-hhandle,
+.e-scroller .e-hhandlespace,
+.e-scroller .e-hup,
+.e-scroller .e-hdown,
+.e-scroller .e-hscroll {
+  height: 18px;
+  display: inline-block;
+}
+.e-scroller .e-vscroll,
+.e-scroller .e-hscroll,
+.e-scroller .e-unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.e-scroller .e-vscroll {
+  vertical-align: top;
+  width: 18px;
+  float: right;
+}
+.e-scroller .e-vhandle,
+.e-scroller .e-hhandle,
+.e-scroller .e-button {
+  position: relative;
+}
+.e-scroller.e-rtl {
+  direction: rtl;
+}
+.e-scroller.e-rtl .e-content,
+.e-scroller.e-rtl .e-hscroll {
+  float: right;
+}
+.e-scroller .e-vup {
+  background-position: -472px -65px;
+}
+.e-scroller .e-hup {
+  background-position: -444px -64px;
+}
+.e-hdown,
+e-rtl e-hdown {
+  background-position: -496px -64px;
+}
+.e-scroller .e-vdown {
+  background-position: -419px -65px;
+}
+.e-scroller .e-vscroll,
+.e-scroller .e-hscroll,
+.e-scroller .e-vhandlespace {
+  background-color: #ecedee;
+}
+.e-scroller .e-vscroll,
+.e-scroller .e-hscroll {
+  border-style: none;
+}
+.e-scroller .e-active {
+  background-color: #2382c3;
+}
+.e-scroller .e-hup,
+.e-scroller .e-hdown,
+.e-scroller .e-vup,
+.e-scroller .e-vdown {
+  background-image: url(../common-images/icons-gray.png);
+}
+.e-scroller .e-vhandle,
+.e-scroller .e-hhandle {
+  background: #ecedee;
+  /* Old browsers */
+
+  border: 1px solid #c4c4c4;
+  transition: top .1s linear 0s, left .1s linear 0s;
+}
+.e-scroller .e-vhandle:hover,
+.e-scroller .e-hhandle:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  cursor: default;
+}
+.e-scroller .e-button:hover {
+  background-image: url(../common-images/icons-white.png);
+  background-color: #5eabde;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*Theme Color*/
+
+.e-acrdn {
+  font-family: Segoe UI;
+}
+.e-acrdn .e-content {
+  border-color: #bbbcbb;
+  background-color: white;
+  color: #5c5c5c;
+  font-size: 14px;
+}
+.e-acrdn .e-select:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+}
+.e-acrdn .e-select:hover a {
+  color: white;
+}
+.e-acrdn .e-select:hover {
+  color: white;
+}
+.e-acrdn .e-select,
+.e-acrdn .e-disable.e-select:hover,
+.e-acrdn .e-disable.e-select:hover a {
+  background: #ecedee;
+  /* Old browsers */
+
+  color: #5c5c5c;
+}
+.e-acrdn .e-select {
+  border-color: #bbbcbb;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: Segoe UI;
+}
+.e-acrdn .e-select a {
+  color: #5c5c5c;
+}
+.e-acrdn .e-select:first-child {
+  border-top-color: #bbbcbb;
+}
+.e-acrdn .e-active,
+.e-acrdn .e-disable.e-active.e-select:hover a,
+.e-acrdn .e-disable.e-active.e-select:hover {
+  background: #2382c3;
+  /* Old browsers */
+
+  color: white;
+}
+.e-acrdn .e-active {
+  border-color: #2382c3;
+  font-weight: normal;
+  border-bottom: medium none;
+}
+.e-acrdn .e-active a {
+  color: white;
+}
+.e-acrdn .e-content.e-load {
+  background-image: url(images/ajax-loader.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- autocomplete -------------------------------------------*/
+
+.e-atc .e-in-wrap,
+.e-atc .e-input,
+.e-atc-popup,
+.e-atc .e-options {
+  background-color: white;
+  border-color: #bbbcbb;
+  color: #5c5c5c;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: normal;
+}
+.e-atc .e-options.e-active {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+}
+.e-atc .e-boxes {
+  background-color: white;
+}
+.e-atc.e-focus {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.e-atc-popup .e-category {
+  border-bottom: 1px solid #bbbcbb;
+}
+.e-atc-popup .e-hover,
+.e-atc .e-select:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+}
+.e-atc .e-select,
+.e-atc.e-rtl .e-select {
+  border-color: #bbbcbb;
+  background: #ecedee;
+  /* Old browsers */
+
+  color: #5c5c5c;
+}
+.e-atc .e-input.e-load {
+  background-image: url(images/ajax-loader.gif);
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/* default icon state */
+
+.e-icon,
+.e-disable.e-select:hover .e-icon,
+.e-tab .e-active:hover div,
+.e-dialog .e-resizable:hover,
+.e-menu span.e-arrows {
+  background-image: url(../common-images/icons-gray.png);
+}
+.e-header .e-icon {
+  background-image: url(../common-images/icons-white.png);
+}
+/* hover icon state */
+
+.e-select:hover .e-icon,
+.e-disable.e-active.e-select:hover .e-icon,
+.e-tab .e-select:hover div,
+.e-menu >li:hover >a  span.e-arrows,
+.e-menu >li:hover >span  span.e-arrows,
+.e-menu >li > ul >li:hover >a span.e-arrows,
+.e-menu >li > ul >li:hover >span span.e-arrows,
+.e-menu .e-mhover  >a  span.e-arrows,
+.e-menu .e-mhover  >span  span.e-arrows,
+.e-menu .e-mfocused  >a  span.e-arrows,
+.e-menu .e-mfocused  >span  span.e-arrows {
+  background-image: url(../common-images/icons-white.png);
+}
+/* active icon state */
+
+.e-widget .e-active .e-icon,
+.e-widget .e-header .e-active .e-icon {
+  background-image: url(../common-images/icons-white.png);
+}
+/*------------------------------------- Button -------------------------------------------*/
+
+.e-btn,
+.e-tbtn,
+.e-split-btn {
+  font-family: Segoe UI;
+  font-weight: normal;
+  font-size: 14px;
+}
+.e-btn.e-select,
+.e-btn.e-disable.e-select:hover,
+.e-tbtn.e-disable {
+  background: #ecedee;
+  /* Old browsers */
+
+  color: #5c5c5c;
+  border-color: #bbbcbb;
+}
+.e-btn.e-select:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  border-color: #5eabde;
+  color: white;
+}
+.e-btn.e-select:active,
+.e-tbtn.e-active {
+  background: #2382c3;
+  /* Old browsers */
+
+  border-color: #2382c3;
+  color: white;
+}
+/*------------------------------------- Common -------------------------------------------*/
+
+.ejinputtext {
+  background-color: white;
+  border: 1px solid #bbbcbb;
+  color: #5c5c5c;
+  outline: medium none;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------DatePicker themes -------------*/
+
+.e-datewidget .e-in-wrap {
+  border-color: #bbbcbb;
+}
+.e-datewidget.e-focus,
+.e-datewidget .e-input.e-focus {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.e-datewidget .e-select,
+.e-datewidget.e-rtl .e-select,
+.e-datewidget .e-disable.e-select:hover {
+  background: #ecedee;
+  /* Old browsers */
+
+  border-color: #bbbcbb;
+}
+.e-datewidget .e-select:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+}
+.e-datewidget .e-select.e-active {
+  background: #2382c3;
+  /* Old browsers */
+
+}
+.e-datewidget .e-input {
+  background-color: white;
+  color: #5c5c5c;
+}
+.e-datepicker table td.other-month,
+.e-datepicker .e-allyear-first,
+.e-datepicker .e-allyear-last,
+.e-datepicker .e-year-first,
+.e-datepicker .e-year-last {
+  color: #1b95cf;
+}
+.e-datepicker table td.e-dp-weekend {
+  color: #cd0a0a;
+}
+.e-datepicker.e-calendar {
+  border-color: #bbbcbb;
+  background-color: white;
+}
+.e-datepicker .e-header,
+.e-datetime-popup .e-timecontainer .e-header {
+  background: #1b95cf;
+  /* Old browsers */
+
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+}
+.e-datepicker .e-footer {
+  color: #5c5c5c;
+  border: 1px solid transparent;
+}
+.e-datepicker .e-footer:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+  border: 1px solid #5eabde;
+}
+.e-datepicker .e-text {
+  color: white;
+}
+.e-datepicker .e-week-header {
+  background: #ecedee;
+  /* Old browsers */
+
+  color: #5c5c5c;
+  border-bottom: 1px solid transparent;
+}
+.e-datepicker table td:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+  border-color: #5eabde;
+  border-radius: 4px;
+  box-shadow: 0 0 0 transparent inset;
+}
+.e-datepicker .e-state-hover {
+  box-shadow: 0 0 6px #bbbcbb inset;
+}
+.e-datepicker .e-left-arrow:hover,
+.e-datepicker .e-right-arrow:hover {
+  background-color: #5eabde;
+  border-radius: 4px 4px 4px 4px;
+}
+.e-datepicker .e-state-default {
+  color: #5c5c5c;
+  font-weight: normal;
+}
+.e-datepicker .today {
+  background-color: #ecedee;
+  color: #5c5c5c;
+  box-shadow: 0 0 0 transparent inset;
+  border-radius: 4px;
+}
+.e-datepicker .other-month.e-active {
+  background: none;
+}
+.e-datepicker .e-active {
+  background: #2382c3;
+  /* Old browsers */
+
+  border-radius: 4px;
+  box-shadow: 0 0 0 transparent inset;
+  /*For flicker issue */
+  color: white;
+}
+.e-datepicker table td.other-month:hover,
+.e-datepicker .e-allyear-first:hover,
+.e-datepicker .e-allyear-last:hover,
+.e-datepicker .e-year-first:hover,
+.e-datepicker .e-year-last:hover {
+  color: #d0d0d1;
+  background-color: transparent;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- DateTimePicker -------------------------------------------*/
+
+.e-datetime-wrap .e-input,
+.e-datetime-popup {
+  background-color: white;
+  font-family: Segoe UI;
+  font-weight: normal;
+  color: #5c5c5c;
+}
+.e-datetime-wrap .e-in-wrap,
+.e-datetime-popup,
+.e-datetime-popup .e-timecontainer .e-header {
+  border-color: #bbbcbb;
+}
+.e-datetime-wrap.e-focus,
+.e-datetime-popup .e-focus {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.e-datetime-wrap .e-select,
+.e-datetime-wrap.e-rtl .e-select,
+.e-datetime-wrap .e-disable.e-select:hover {
+  background: #ecedee;
+  /* Old browsers */
+
+  border-color: #bbbcbb;
+}
+.e-datetime-wrap .e-select:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+}
+.e-datetime-popup .e-dt-button {
+  background: #ecedee;
+  /* Old browsers */
+
+  border: 1px solid #bbbcbb;
+  color: #5c5c5c;
+}
+.e-datetime-popup .e-dt-button:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+.e-dialog.e-dialog-wrap {
+  border-color: #bbbcbb;
+  background: white;
+  font-family: Segoe UI;
+}
+.e-dialog .e-dialog-icon:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  border-image: initial;
+}
+.e-dialog .e-header {
+  background: #1b95cf;
+  /* Old browsers */
+
+  border: 1px solid #1b95cf;
+  color: white;
+  font-weight: normal;
+  border-bottom: medium none;
+  font-size: 16px;
+  overflow: hidden;
+}
+.e-dialog.e-content {
+  background: white;
+  color: #5c5c5c;
+  font-size: 14px;
+}
+.e-dialog.e-content.e-load {
+  background-image: url(images/ajax-loader.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- dropdownlist -------------------------------------------*/
+
+.e-ddl .e-input,
+.e-ddl-popup,
+.e-ddl .e-options {
+  background-color: white;
+  color: #5c5c5c;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: normal;
+}
+.e-ddl .e-in-wrap,
+.e-ddl-popup,
+.e-ddl .e-options {
+  border-color: #bbbcbb;
+}
+.e-ddl .e-options.e-active {
+  background-color: #2382c3;
+  color: white;
+}
+.e-ddl .e-boxes {
+  background-color: white;
+}
+.e-ddl.e-focus {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.e-ddl .e-input.e-watermark {
+  color: #d0d0d1 !important;
+  font-style: italic;
+}
+.e-ddl-popup .e-hover,
+.e-ddl .e-select:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+}
+.e-ddl-popup .e-active {
+  background: #2382c3;
+  /* Old browsers */
+
+  color: white;
+}
+.e-ddl .e-select,
+.e-ddl.e-rtl .e-select,
+.e-ddl .e-disable.e-select:hover {
+  background: #ecedee;
+  /* Old browsers */
+
+  color: #5c5c5c;
+  border-color: #bbbcbb;
+}
+.e-ddl-popup div > ul .e-ghead {
+  border-bottom: 2px solid #bbbcbb;
+  display: block;
+  font-weight: 600;
+  margin: 2px 2px 2px 4%;
+  position: relative;
+}
+.e-ddl .e-select.e-load {
+  background-image: url(images/ajax-loader.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/* ------- editor less ----------- */
+
+.e-numeric,
+.e-percent,
+.e-currency,
+.e-mask {
+  background-color: white;
+}
+.e-numeric .e-in-wrap,
+.e-percent .e-in-wrap,
+.e-currency .e-in-wrap,
+.e-mask .e-in-wrap {
+  border-color: #bbbcbb;
+}
+.e-numeric .e-input,
+.e-percent .e-input,
+.e-currency .e-input,
+.e-mask .e-input {
+  color: #5c5c5c;
+  background-color: white;
+}
+.e-numeric.e-focus,
+.e-percent.e-focus,
+.e-currency.e-focus,
+.e-mask.e-focus {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.e-numeric .e-input.e-error,
+.e-percent .e-input.e-error,
+.e-currency .e-input.e-error,
+.e-mask.e-error {
+  color: #cd0a0a;
+}
+.e-numeric .e-watermark,
+.e-percent .e-watermark,
+.e-currency .e-watermark,
+.e-mask .e-watermark {
+  color: #d0d0d1;
+}
+.e-mask .e-error {
+  color: #cd0a0a;
+}
+.e-numeric .e-select,
+.e-numeric.e-rtl .e-select,
+.e-numeric .e-disable.e-select:hover,
+.e-percent .e-select,
+.e-percent.e-rtl .e-select,
+.e-percent .e-disable.e-select:hover,
+.e-currency .e-select,
+.e-currency.e-rtl .e-select,
+.e-currency .e-disable.e-select:hover {
+  background: #ecedee;
+  /* Old browsers */
+
+  border-color: #bbbcbb;
+}
+.e-numeric .e-select:hover,
+.e-percent .e-select:hover,
+.e-currency .e-select:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+}
+.e-numeric .e-select .e-spin-up.e-active,
+.e-numeric .e-select .e-spin-down.e-active,
+.e-percent .e-select .e-spin-up.e-active,
+.e-percent .e-select .e-spin-down.e-active,
+.e-currency .e-select .e-spin-up.e-active,
+.e-currency .e-select .e-spin-down.e-active {
+  background: #2382c3;
+  /* Old browsers */
+
+}
+.e-numeric .e-icon .e-arrow,
+.e-percent .e-icon .e-arrow,
+.e-currency .e-icon .e-arrow {
+  border: 0 none transparent;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/* ------- menu less ----------- */
+
+.e-menu.e-separator.e-horizontal > li {
+  border-right-color: #bbbcbb;
+}
+/*---------------------theming----------------------------------*/
+
+.e-menu.e-horizontal >li >a,
+.e-menu.e-horizontal >li >span {
+  color: #5c5c5c;
+}
+.e-menu.e-vertical >li > a,
+.e-menu.e-vertical >li > span,
+.e-menu.e-horizontal li > ul >li >a,
+.e-menu.e-horizontal li > ul >li >span,
+.e-menu.e-vertical li > ul >li >a,
+.e-menu.e-vertical li > ul >li >span,
+.e-menu.e-context li > ul >li >a,
+.e-menu.e-context li > ul >li >span,
+.e-menu.e-context a,
+.e-menu.e-context span {
+  color: #5c5c5c;
+}
+.e-menu {
+  background: #ecedee;
+  /* Old browsers */
+
+  border-color: #bbbcbb;
+}
+.e-menu.e-horizontal > li:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+}
+.e-menu.e-vertical > li.e-separator:hover {
+  border: 0px none transparent;
+}
+.e-menu.e-horizontal li > ul {
+  background: #ecedee;
+  /* Old browsers */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-color: #bbbcbb;
+}
+.e-menu.e-horizontal > li > ul:after {
+  border-color: transparent transparent #ecedee;
+  border-style: solid;
+}
+.e-menu.e-horizontal li > ul >li:hover,
+.e-menu.e-vertical li > ul >li:hover,
+.e-menu.e-context li > ul >li:hover,
+.e-menu.e-context > li:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+}
+.e-menu.e-horizontal > li:hover > a,
+.e-menu.e-horizontal > li:hover > span {
+  color: white;
+}
+.e-menu.e-vertical > li:hover > a,
+.e-menu.e-vertical > li:hover > span,
+.e-menu.e-context li:hover > a,
+.e-menu.e-context li:hover > span,
+.e-menu.e-horizontal li > ul >li:hover > a,
+.e-menu.e-horizontal li > ul >li:hover > span,
+.e-menu.e-vertical li > ul >li:hover  > a,
+.e-menu.e-vertical li > ul >li:hover  > span,
+.e-menu.e-context li > ul >li:hover > a,
+.e-menu.e-context li > ul >li:hover > span {
+  color: white;
+}
+.e-menu.e-horizontal li > ul li.e-separator,
+.e-menu.e-vertical li > ul li.e-separator,
+.e-menu.e-context li > ul li.e-separator,
+.e-menu.e-vertical > li.e-separator,
+.e-menu.e-context > li.e-separator {
+  background-color: #bbbcbb;
+  /* border background color is for separator */
+
+}
+.e-menu.e-horizontal li > ul li.e-separator:hover,
+.e-menu.e-vertical li > ul li.e-separator:hover,
+.e-menu.e-context li > ul li.e-separator:hover,
+.e-menu.e-context > li.e-separator:hover {
+  border: 0px solid transparent;
+}
+/*-------------------vertical-theming----------------------------------*/
+
+.e-menu.e-vertical {
+  background: #ecedee;
+  /* Old browsers */
+  
+  color: #5c5c5c;
+  border-color: #bbbcbb;
+}
+.e-menu.e-vertical > li:hover,
+.e-menu.e-vertical > li:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+}
+.e-menu.e-vertical li > ul {
+  background: #ecedee;
+  /* Old browsers */
+  
+  border-color: #bbbcbb;
+}
+/*-------------------context-theming----------------------------------*/
+
+.e-menu.e-context {
+  background: #ecedee;
+  /* Old browsers */
+
+  border-color: #bbbcbb;
+}
+.e-menu.e-context li > ul {
+  background: #ecedee;
+  /* Old browsers */
+
+  border-color: #bbbcbb;
+}
+/*----------------------------------- disabled items ----------------------------------*/
+
+.e-menu.e-horizontal li.e-disable-item,
+.e-menu.e-horizontal li > ul li.e-disable-item,
+.e-menu.e-vertical li.e-disable-item,
+.e-menu.e-vertical li > ul li.e-disable-item,
+.e-menu.e-context li.e-disable-item,
+.e-menu.e-context li > ul li.e-disable-item {
+  background-color: transparent;
+}
+.e-menu.e-horizontal  li.e-disable-item > *,
+.e-menu.e-horizontal li > ul li.e-disable-item > *,
+.e-menu.e-vertical li.e-disable-item > *,
+.e-menu.e-vertical li > ul li.e-disable-item > *,
+.e-menu.e-context  li.e-disable-item > *,
+.e-menu.e-context li > ul li.e-disable-item > * {
+  filter: alpha(opacity=40);
+  opacity: 0.4;
+}
+.e-menu.e-horizontal  li.e-disable-item a:hover,
+.e-menu.e-horizontal  li.e-disable-item span:hover,
+.e-menu.e-horizontal  li.e-disable-item:hover,
+.e-menu.e-vertical  li.e-disable-item a:hover,
+.e-menu.e-vertical  li.e-disable-item span:hover,
+.e-menu.e-vertical  li.e-disable-item:hover,
+.e-menu.e-context  li.e-disable-item a:hover,
+.e-menu.e-context  li.e-disable-item span:hover,
+.e-menu.e-context  li.e-disable-item:hover {
+  background-color: transparent;
+  background-image: none;
+  color: #5c5c5c;
+}
+.e-menu.e-horizontal .e-mhover,
+.e-menu.e-horizontal .e-mhover > a,
+.e-menu.e-horizontal .e-mhover > span,
+.e-menu.e-horizontal .e-mfocused,
+.e-menu.e-horizontal .e-mfocused > a,
+.e-menu.e-horizontal .e-mfocused > span {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+.e-progressbar {
+  background-color: white;
+  border-color: #bbbcbb;
+  color: #5c5c5c;
+}
+.e-progressbar .e-progress {
+  background: #1b95cf;
+  /* Old browsers */
+
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------Rating themes -------------*/
+
+.e-rating.e-horizontal .e-shape,
+.e-rating.e-vertical .e-shape,
+.e-rating.e-horizontal .e-shape-list,
+.e-rating.e-vertical .e-shape-list,
+.e-rating.e-horizontal .e-reset,
+.e-rating.e-vertical .e-reset {
+  background: url(images/rating-star.png) no-repeat;
+  height: 16px;
+  width: 16px;
+}
+.e-rating .e-shape.inactive {
+  background-position: 0 -174px;
+}
+.e-rating .e-shape.active {
+  background-position: 0 -60px;
+}
+.e-rating .e-shape.selected {
+  background-position: 0 -60px;
+}
+.e-rating.e-horizontal .e-reset:hover,
+.e-rating.e-vertical .e-reset:hover {
+  background-position: 0 -30px;
+}
+.e-rating.e-horizontal .e-reset,
+.e-rating.e-vertical .e-reset {
+  background-position: 0 0;
+  margin-left: 2px;
+}
+.e-rating.e-horizontal .e-shape-list,
+.e-rating.e-vertical .e-shape-list {
+  background-position: 0 -174px;
+}
+.e-tooltip {
+  background-color: #1b95cf;
+  border: 2px solid #1b95cf;
+  color: white;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- Rotator -------------------------------------------*/
+
+.e-rotator-wrap .e-in-wrap .e-single,
+.e-rotator-wrap .e-thumb .e-thumb-items li,
+.e-rotator-wrap .e-in-wrap.e-multiple {
+  border-color: #bbbcbb;
+}
+.e-rotator-wrap .e-thumb .e-thumb-items li:hover {
+  border-color: #5eabde;
+}
+.e-rotator-wrap .e-thumb .e-thumb-items li.e-active {
+  border-color: #2382c3;
+}
+.e-rotator-wrap .e-thumb .e-thumb-items li.e-thumbhover {
+  border-color: #5eabde;
+}
+.e-rotator-wrap .e-inner .e-caption {
+  background-color: white;
+  color: #5c5c5c;
+}
+.e-rotator-wrap .e-pager-wrap .e-bullet > li:hover {
+  border-color: #5eabde;
+  background-color: #5eabde;
+}
+.e-rotator-wrap .e-pager-wrap .e-bullet > li.e-active {
+  border-color: #2382c3;
+  background-color: #2382c3;
+}
+.e-rotator-wrap .e-pager-wrap .e-bullet > li {
+  background-color: #ecedee;
+  border-color: #bbbcbb;
+}
+.e-rotator-wrap .e-in-wrap .e-nav .e-next:active {
+  background-image: url(../common-images/icons-white.png);
+}
+.e-rotator-wrap .e-in-wrap .e-nav .e-previous:active {
+  background-image: url(../common-images/icons-white.png);
+}
+.e-rotator-wrap .e-in-wrap .e-nav .play:active {
+  background-image: url(../common-images/icons-white.png);
+}
+.e-rotator-wrap .e-in-wrap .e-nav .pause:active {
+  background-image: url(../common-images/icons-white.png);
+}
+.e-rotator-wrap .e-thumb-nav .e-thumb-btn.e-previous:active {
+  background-image: url(../common-images/icons-white.png);
+}
+.e-rotator-wrap .e-thumb-nav .e-thumb-btn.e-next:active {
+  background-image: url(../common-images/icons-white.png);
+}
+.e-rotator-wrap .e-in-wrap .e-nav .e-next:hover {
+  background-image: url(../common-images/icons-black.png);
+}
+.e-rotator-wrap .e-in-wrap .e-nav .e-previous:hover {
+  background-image: url(../common-images/icons-black.png);
+}
+.e-rotator-wrap .e-in-wrap .e-nav .play:hover {
+  background-image: url(../common-images/icons-black.png);
+}
+.e-rotator-wrap .e-in-wrap .e-nav .pause:hover {
+  background-image: url(../common-images/icons-black.png);
+}
+.e-rotator-wrap .e-thumb-nav .e-thumb-btn.e-previous:hover {
+  background-image: url(../common-images/icons-black.png);
+}
+.e-rotator-wrap .e-thumb-nav .e-thumb-btn.e-next:hover {
+  background-image: url(../common-images/icons-black.png);
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- slider -------------------------------------------*/
+
+.e-slider.e-widget {
+  background-color: white;
+  border-color: #bbbcbb;
+}
+.e-tooltip {
+  background: #1b95cf;
+  /* Old browsers */
+
+  border-color: #1b95cf;
+  color: white;
+}
+.e-slider .e-handle.e-select {
+  background-color: #ecedee;
+  border-color: #bbbcbb;
+}
+.e-slider .e-handle.e-hover {
+  background-color: #ecedee;
+  border-color: #bbbcbb;
+}
+.e-slider .e-handle.e-focus {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.e-slider .e-range {
+  background: #1b95cf;
+  /* Old browsers */
+
+}
+.e-scale .e-tick {
+  background-image: url(images/dot.png);
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- splitter -------------------------------------------*/
+
+.e-splitter {
+  border-color: #bbbcbb;
+}
+.e-splitter .e-pane {
+  background-color: white;
+  color: #5c5c5c;
+}
+.e-splitter .e-splitbar.e-shadowbar.e-end-indicaton,
+.e-splitter .e-splitbar .e-end-indicaton {
+  background-color: #fef1ec;
+}
+.e-splitter .e-splitbar.e-shadowbar {
+  background: #2382c3;
+  /* Old browsers */
+
+}
+.e-splitter .e-splitbar {
+  background-color: white;
+  border-color: #bbbcbb;
+}
+.e-splitter .e-splitbar:hover:not(.e-shadowbar) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.e-splitter .e-splitbar .e-h-arrow,
+.e-splitter .e-splitbar .e-v-arrow {
+  background-image: url(../common-images/icons-gray.png);
+  background-repeat: no-repeat;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*Theme Color*/
+
+.e-tab {
+  font-family: Segoe UI;
+}
+.e-tab .e-header {
+  background: #1b95cf;
+  /* Old browsers */
+
+  border-bottom: 1px solid #1b95cf;
+}
+.e-tab .e-header > .e-item:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+  border-image: initial;
+}
+.e-tab .e-active:hover div.e-delete {
+  background-image: url(../common-images/icons-gray.png);
+}
+.e-tab .e-content {
+  border-color: #bbbcbb;
+  background: white;
+  color: #5c5c5c;
+  font-size: 14px;
+}
+.e-tab .e-header > .e-select,
+.e-tab .e-header > .e-active {
+  background: #1b95cf;
+  /* Old browsers */
+
+  border-color: #bbbcbb;
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+}
+.e-tab .e-header > .e-select a {
+  color: white;
+}
+.e-tab .e-header > .e-active,
+.e-tab .e-header > .e-active:hover {
+  background: white;
+  border-color: #bbbcbb;
+  color: #5c5c5c;
+}
+.e-tab .e-header > .e-active a {
+  color: #5c5c5c;
+}
+.e-tab .e-load {
+  background-image: url(images/ajax-loader.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- tagcloud -------------------------------------------*/
+
+.e-tagcloud {
+  background-color: white;
+  border-color: #bbbcbb;
+}
+.e-tagcloud .e-title {
+  background: #1b95cf;
+  /* Old browsers */
+
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+}
+.e-tagcloud .e-load {
+  background-image: url(images/ajax-loader.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.e-tagcloud .e-tagitems .e-txt {
+  color: #5c5c5c;
+}
+.e-tagcloud .e-tagitems .e-txt.hover {
+  color: #1b95cf;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- TimeEditor -------------------------------------------*/
+
+.e-timewidget .e-input,
+.e-time-popup {
+  background-color: white;
+  font-family: Segoe UI;
+  font-weight: normal;
+  color: #5c5c5c;
+}
+.e-timewidget .e-in-wrap,
+.e-time-popup {
+  border-color: #bbbcbb;
+}
+.e-timewidget.e-focus {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.e-timewidget .e-select,
+.e-timewidget.e-rtl .e-select,
+.e-timewidget .e-disable.e-select:hover {
+  background: #ecedee;
+  /* Old browsers */
+
+  border-color: #bbbcbb;
+}
+.e-timewidget .e-select:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+}
+.e-time-popup .e-hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+}
+.e-time-popup .e-active {
+  background: #2382c3;
+  /* Old browsers */
+
+  color: white;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- ToolBar -------------------------------------------*/
+
+.e-toolbar {
+  font-family: Segoe UI;
+  font-weight: normal;
+  font-size: 14px;
+}
+.e-toolbar .e-horizontal .e-separator {
+  border-right: 1px solid #bbbcbb;
+  border-left: none;
+}
+.e-toolbar .e-vertical .e-separator {
+  border-bottom: 1px solid #bbbcbb;
+  border-top: none;
+}
+.e-toolbar.e-rtl .e-horizontal .e-separator {
+  border-left: 1px solid #bbbcbb;
+  border-right: none;
+}
+.e-toolbar.e-rtl .e-vertical .e-separator {
+  border-top: 1px solid #bbbcbb;
+  border-bottom: none;
+}
+/*(~"@{skin}.e-toolbar"), (~"@{skin}.e-toolbar .e-vertical")
+{
+    color: @content-font-color;
+	.default-gradient();
+	background-repeat:no-repeat;
+}*/
+
+.e-toolbar {
+  color: #5c5c5c;
+  background: #ecedee;
+  /* Old browsers */
+
+  background-repeat: no-repeat;
+  border-color: #bbbcbb;
+}
+.e-toolbar .e-horizontal .e-hover,
+.e-toolbar .e-vertical .e-hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  border-color: #5eabde;
+  color: white;
+}
+.e-toolbar .e-horizontal .e-active,
+.e-toolbar .e-vertical .e-active {
+  background: #2382c3;
+  /* Old browsers */
+
+  border-color: #2382c3;
+  color: white;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*Theme Color*/
+
+.e-treeview {
+  font-family: Segoe UI;
+}
+.e-treeview .e-text {
+  color: #5c5c5c;
+}
+.e-treeview .e-active {
+  background: #2382c3;
+  /* Old browsers */
+
+  color: white;
+  border: 1px solid transparent;
+  border-image: initial;
+}
+.e-treeview .e-node-hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+  border: 1px solid #5eabde;
+  border-image: initial;
+  cursor: pointer;
+}
+.e-treeview .e-sibling {
+  background: url(images/drop-sibling.png);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+}
+.e-treeview .e-node-disable {
+  filter: alpha(opacity=40);
+  opacity: .4;
+}
+.e-treeview .e-plus.e-load,
+.e-treeview.e-rtl .e-plus.e-load {
+  background-image: url(images/ajax-loader.gif);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- Upload Box -------------------------------------------*/
+
+.e-uploadbox .e-inputbtn {
+  font-family: Segoe UI;
+  font-weight: normal;
+  font-size: 14px;
+}
+.e-uploadbox .e-file-name-txt {
+  font-family: Segoe UI;
+  font-weight: normal;
+  font-size: 16px;
+}
+.e-uploadbox .e-select,
+.e-uploadbox.e-disable .e-select:hover {
+  background: #ecedee;
+  /* Old browsers */
+
+  color: #5c5c5c;
+  border-color: #bbbcbb;
+}
+.e-uploadbox .e-select:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  border-color: #5eabde;
+  color: white;
+}
+.e-uploadbox .e-select .e-inputbtn,
+.e-uploadbox.e-disable .e-select .e-inputbtn {
+  color: #5c5c5c;
+}
+.e-uploadbox .e-select:hover .e-inputbtn {
+  color: white;
+}
+.e-uploadbox .e-file-name-txt {
+  color: #5c5c5c;
+}
+.e-uploadbox .e-file-list .e-file-status-failed {
+  color: #cd0a0a;
+}
+.e-uploadbox .e-file-list .e-file-status-success {
+  color: #5c5c5c;
+}
+.e-uploadbox .e-file-progress-status {
+  background: #2382c3;
+  /* Old browsers */
+
+}
+.e-uploadbox .e-file-list {
+  background-color: white;
+  color: #5c5c5c;
+}
+.e-uploadbox .e-ul li:nth-child(odd) .e-file-list {
+  background-color: white;
+}
+.e-uploadbox .e-ul li:nth-child(even) .e-file-list {
+  background-color: white;
+}
+/*Icons */
+
+.e-uploadbox .e-file-list .e-file-percentage-success {
+  background-image: url(../common-images/icons-white.png);
+  background-position: -416px -19px;
+}
+.e-uploadbox .e-file-list .e-file-percentage-failed {
+  background-image: url(../common-images/icons-white.png);
+  background-position: -441px -21px;
+}
+.e-uploadbox .e-dialog .e-header {
+  color: white;
+  font-size: 23px;
+  font-weight: normal;
+}
+.e-uploadbox .e-action-perform {
+  background-color: white;
+}
+.e-uploadbox .e-action-perform:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*Theme Color*/
+
+/*---------------- RTE Theme CSS----------------------*/
+
+.e-rte {
+  font-family: Segoe UI;
+}
+.e-rte-wrapper {
+  border: 1px solid #bbbcbb;
+  background: white;
+  color: #5c5c5c;
+  font-size: 14px;
+}
+.e-inputtext {
+  border: 1px solid #bbbcbb;
+  outline: none;
+  background-color: white;
+  color: #5c5c5c;
+  vertical-align: baseline;
+}
+/*----------------------- Toolbar Class-------------------------- */
+
+.e-rte .e-horizontal.e-separator,
+.e-rte .e-toolbarspan ul:last-child {
+  border-right: 1px dotted #bbbcbb;
+}
+.e-rte .customtable-group:hover {
+  background: #5eabde;
+  /* Old browsers */
+
+  color: white;
+}
+.e-rte .e-toolbarspan {
+  border: none;
+  border-bottom: 1px solid #bbbcbb;
+}
+.e-rte .e-hover .e-rte-icons,
+.e-rte .e-splitbutton:hover .e-bgcolor-icon,
+.e-rte .e-splitbutton:hover .e-fontcolor-icon,
+.e-rte .customtable-group:hover span.e-rte-toolbar-icon,
+.e-hover .e-rte-toolbar-icon {
+  background-image: url(../common-images/icons-white.png);
+}
+.e-rte .e-active .e-rte-icons,
+.e-active .e-rte-toolbar-icon {
+  background-image: url(../common-images/icons-white.png);
+}
+.e-rte .e-hover .e-bgcolor-icon,
+.e-rte .e-hover .e-fontcolor-icon,
+.e-rte .e-rte-icons,
+.e-rte .e-bgcolor-icon,
+.e-rte .e-fontcolor-icon,
+.e-rte-toolbar-icon {
+  background-image: url(../common-images/icons-gray.png);
+}
+.e-dialog .e-fieldseparate {
+  border-color: #bbbcbb;
+}
+.e-rte .e-rte-footer {
+  border-top: 1px solid #bbbcbb;
+  background: #ecedee;
+  /* Old browsers */
+
+}
+.e-rte-colorpalette.e-menu > li:hover {
+  background: none;
+}
+.e-rte-table-picker {
+  background: #ecedee !important;
+  /* Old browsers */
+
+}
+.e-rte-tablecell {
+  border-color: #bbbcbb;
+}
+.e-rte-tablecell.e-default {
+  background: white;
+}
+.e-rte-tablecell.e-active {
+  background: #5eabde;
+  /* Old browsers */
+
+  border-color: #5eabde;
+}
+.e-toolbar .e-rte-format .e-hover,
+.e-toolbar .e-rte-fontgroup .e-hover {
+  background-color: transparent;
+  border-color: transparent;
+  background-image: none;
+}
+.e-rte .e-rte-resize {
+  background-image: url(../common-images/icons-gray.png);
+  background-position: 1px -58px;
+  width: 16px;
+  height: 20px;
+  cursor: se-resize;
+}
+.e-rte .e-rte-htmltaginfo,
+.e-rte .e-rte-wordcount {
+  font-family: Segoe UI;
+  font-size: 14px;
+  color: #5c5c5c;
+  cursor: default;
+}
+.e-rte .e-rte-footericon,
+.e-rte .e-rte-wordcount {
+  border-right: 1px solid #bbbcbb;
+}
+.e-rte-colorpalette {
+  padding: 5px !important;
+  width: auto !important;
+}
+.e-error {
+  color: #cd0a0a;
+}
+/*---------------- RTE Theme End------------------*/
+
+
+/*-----------------------OLAP Definition-----------------*/
+/*------------------------------------- MetroLight Skin -------------------------------------------*/
+
+.e-waitpopup-pane .e-image {
+  background-color: white;
+  background-image: url(images/waitingpopup.gif);
+}
+.e-waitpopup-pane {
+  background-color: #aaaaaa;
+  color: white;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+.e-chkbox-wrap div > span {
+  border-color: #bbbcbb;
+  background-color: white;
+}
+.e-chkbox-wrap .e-chk-image {
+  background-image: url(images/checkedtick.png);
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+}
+.e-chkbox-wrap .e-chk-image.e-chk-indetericon {
+  background-image: url("images/gradient.png");
+  background-repeat: repeat;
+  background-position: 0;
+}
+.e-chkbox-wrap .e-chkbox-small .e-chk-act .e-chk-image.e-chk-activeicon {
+  background-position: -1px -21px;
+}
+.e-chkbox-wrap .e-chkbox-medium .e-chk-act .e-chk-image.e-chk-activeicon {
+  background-position: 2px 2px;
+}
+.e-chkbox-wrap .e-text {
+  font-family: Segoe UI;
+  font-size: 12px;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+/*Theme Color*/
+
+.e-radiobtn-wrap > span {
+  background-color: white;
+  background-image: none;
+  border-color: #bbbcbb;
+}
+.e-radiobtn-wrap .e-rad-select {
+  background: none repeat scroll 0 0 transparent;
+}
+.e-radiobtn-wrap .e-rad-active {
+  background: url("images/gradient.png") repeat scroll 0 0 #2382c3;
+}
+.e-radiobtn-wrap .e-text {
+  font-family: Segoe UI;
+  font-size: 12px;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+.e-olapgrid table {
+  font: 12px Segoe UI !important;
+  color: #565656;
+  border-collapse: collapse;
+  background-color: White;
+  cursor: default;
+}
+.e-olapgrid th,
+.e-olapgrid td {
+  padding: 0 2px 0 3px;
+  border: solid 1px;
+  border-color: #c4c4c4;
+  white-space: nowrap;
+  height: 25px;
+  font-weight: normal;
+}
+.e-olapgrid .value {
+  background-color: White;
+  text-align: right !important;
+  padding: 6px 6px 6px 16px;
+}
+.e-olapgrid .summary {
+  background-color: #ccedff;
+  color: #565656;
+  white-space: nowrap;
+  text-align: left;
+  font-weight: bold;
+}
+.e-olapgrid .colheader,
+.e-olapgrid .rowheader {
+  font-weight: bold;
+  color: #5c5c5c;
+  background: white;
+  background-repeat: repeat;
+  padding: 6px 16px 6px 2px;
+  text-align: left;
+  font-style: normal;
+}
+.e-olapgrid .colheader:hover,
+.e-olapgrid .rowheader:hover {
+  font-weight: bold;
+  color: white;
+  background: #5eabde;
+  background-repeat: repeat;
+  padding: 6px 16px 6px 2px;
+  text-align: left;
+  font-style: normal;
+}
+.e-olapgrid .expand,
+.e-olapgrid .collapse {
+  background-image: url("../common-images/icons-gray.png");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+}
+.e-olapgrid .expand,
+.e-olapgrid .header-hover-expand {
+  background-position: -159px -89px;
+}
+.e-olapgrid .collapse,
+.e-olapgrid .header-hover-collapse {
+  background-position: -185px -88px;
+}
+.e-olapgrid .header-hover-expand,
+.e-olapgrid .header-hover-collapse {
+  background-image: url("../common-images/icons-white.png") !important;
+  background-repeat: no-repeat;
+}
+.e-olapgrid .kpiiconvalue {
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.e-olapgrid .kpiuparrow {
+  background-image: url("images/olap-kpi.png");
+  background-position: center -521px;
+}
+.e-olapgrid .kpirightarrow {
+  background-image: url("images/olap-kpi.png");
+  background-position: center -322px;
+}
+.e-olapgrid .kpidownarrow {
+  background-image: url("images/olap-kpi.png");
+  background-position: center -124px;
+}
+.e-olapgrid .kpidiamond {
+  background-image: url("images/olap-kpi.png");
+  background-position: center -59px;
+}
+.e-olapgrid .kpitriangle {
+  background-image: url("images/olap-kpi.png");
+  background-position: center -455px;
+}
+.e-olapgrid .kpicircle {
+  background-image: url("images/olap-kpi.png");
+  background-position: center 8px;
+}
+.e-olapgrid .kpiredroad {
+  background-image: url("images/olap-kpi.png");
+  background-position: center -255px;
+}
+.e-olapgrid .kpigreenroad {
+  background-image: url("images/olap-kpi.png");
+  background-position: center -189px;
+}
+.e-olapgrid .kpiallcolor {
+  background-image: url("images/olap-kpi.png");
+  background-position: center -387px;
+}
+.e-olapgrid .hyperlinkValueCell {
+  color: #0026ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.e-olapgrid .hyperlinkHeaderCell {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.progressContainer {
+  width: 360px;
+  height: 70px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 5px 1px #c4c4c4;
+  color: #5c5c5c;
+}
+.progressBar {
+  width: 300px;
+  height: 16px;
+  top: 25px;
+  left: 30px;
+  position: absolute;
+}
+.progressText {
+  width: 350px;
+  height: 20px;
+  top: 0px;
+  left: 30px;
+  fontSize: 16px;
+  position: absolute;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+.e-olapclient {
+  border: 1px solid #bbbcbb;
+  background-color: White;
+  color: #5c5c5c;
+}
+.e-olapclient .outerTable {
+  font: normal 12px Segoe UI;
+  border-collapse: collapse;
+}
+.e-olapclient .titleText {
+  height: 50px;
+  width: inherit;
+  color: white;
+  background: #5eabde;
+  display: inline-block;
+  font: normal 20px Segoe UI;
+  line-height: 48px;
+}
+.e-olapclient .chartPanel {
+  height: 0;
+  width: 800px;
+  margin: 5px 7px 7px;
+}
+.e-olapclient .clientTab {
+  margin-left: 7px;
+  margin-top: 6px;
+  font: bold 12px Segoe UI;
+}
+.e-olapclient .toggleExpandButton,
+.e-olapclient .toggleCollapseButton {
+  background-image: url("images/tgarrow.png");
+  background-repeat: no-repeat;
+  height: 17px;
+  width: 21px;
+  cursor: pointer;
+}
+.e-olapclient .toggleExpandButton {
+  float: right;
+  background-position: center -20px;
+  margin: 5px;
+}
+.e-olapclient .toggleCollapseButton {
+  background-position: 6px 0px;
+  position: relative;
+  top: -211px;
+}
+.e-olapclient .toggleExpandButton:hover,
+.e-olapclient .toggleCollapseButton:hover {
+  background-image: url("images/arrow-hover.png");
+}
+.e-olapclient .toggleText {
+  background-image: url("images/toggle-text.png");
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  height: 140px;
+  width: 30px;
+}
+.e-olapclient .splitBtn {
+  margin: 7px 0 0 6px;
+}
+.e-olapclient .csHeader {
+  font: normal 14px Segoe UI;
+  margin: 8px 0 8px 3px;
+}
+.e-olapclient .cdbHeader,
+.e-olapclient .axisHeader {
+  border: 1px solid #bbbcbb;
+  color: white;
+  background: #5eabde;
+  font-weight: bold;
+  line-height: 28px;
+}
+.e-olapclient .cubeTable {
+  border-collapse: collapse;
+  margin: 0 5px 3px 5px;
+}
+.e-olapclient .cdbHeader {
+  border-bottom: 0px;
+}
+.e-olapclient .axisHeader {
+  border-top: 0px;
+}
+.e-olapclient .cubeBrowser {
+  border: 1px solid #bbbcbb;
+}
+.e-olapclient .cubeName {
+  padding: 7px 0 0 6px;
+  font: normal 14px Segoe UI;
+}
+.e-olapclient .categoricalAxis,
+.e-olapclient .rowAxis,
+.e-olapclient .slicerAxis {
+  border: 1px solid #bbbcbb;
+  margin-top: 3px;
+  background-color: #f9f9f9;
+}
+.e-olapclient .dropIndicator {
+  margin-top: 0px !important;
+  border-top: 3px dashed #c1272d;
+}
+.e-olapclient .targetAxis {
+  background-color: #ccedff !important;
+  color: #565656 !important;
+}
+.e-olapclient .controlPanelTD {
+  border-left: 1px solid #bbbcbb;
+}
+.e-olapclient .connectImg,
+.e-olapclient .newReportImg,
+.e-olapclient .addReportImg,
+.e-olapclient .removeReportImg,
+.e-olapclient .renameReportImg,
+.e-olapclient .saveReportImg,
+.e-olapclient .loadReportImg,
+.e-olapclient .excelExportImg,
+.e-olapclient .connectImg:hover,
+.e-olapclient .newReportImg:hover,
+.e-olapclient .addReportImg:hover,
+.e-olapclient .removeReportImg:hover,
+.e-olapclient .renameReportImg:hover,
+.e-olapclient .saveReportImg:hover,
+.e-olapclient .loadReportImg:hover,
+.e-olapclient .excelExportImg:hover {
+  background-image: url("images/olap-toolbar.png");
+  background-repeat: no-repeat;
+  margin: 4px;
+  cursor: default;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.e-olapclient .connectImg:hover,
+.e-olapclient .newReportImg:hover,
+.e-olapclient .addReportImg:hover,
+.e-olapclient .removeReportImg:hover,
+.e-olapclient .renameReportImg:hover,
+.e-olapclient .saveReportImg:hover,
+.e-olapclient .loadReportImg:hover,
+.e-olapclient .excelExportImg:hover {
+  cursor: pointer;
+}
+.e-olapclient .newReportImg,
+.e-olapclient .newReportImg:hover {
+  background-position: center -591px;
+}
+.e-olapclient .addReportImg,
+.e-olapclient .addReportImg:hover {
+  background-position: center -22px;
+}
+.e-olapclient .removeReportImg,
+.e-olapclient .removeReportImg:hover {
+  background-position: center -749px;
+}
+.e-olapclient .renameReportImg,
+.e-olapclient .renameReportImg:hover {
+  background-position: center -774px;
+}
+.e-olapclient .saveReportImg,
+.e-olapclient .saveReportImg:hover {
+  background-position: center -798px;
+}
+.e-olapclient .loadReportImg,
+.e-olapclient .loadReportImg:hover {
+  background-position: center -565px;
+}
+.e-olapclient .excelExportImg,
+.e-olapclient .excelExportImg:hover {
+  background-position: center -308px;
+}
+.e-olapclient .reportList {
+  float: left;
+  margin: 6px auto auto 10px;
+}
+.e-olapclient .dimensionCDB,
+.e-olapclient .folderCDB,
+.e-olapclient .hierarchyCDB,
+.e-olapclient .attributeCDB,
+.e-olapclient .chartCDB,
+.e-olapclient .namedSetCDB,
+.e-olapclient .level0,
+.e-olapclient .level1,
+.e-olapclient .level2,
+.e-olapclient .level3,
+.e-olapclient .level4,
+.e-olapclient .level5,
+.e-olapclient .level6,
+.e-olapclient .level7,
+.e-olapclient .level8,
+.e-olapclient .level9,
+.e-olapclient .level10 {
+  background-image: url("images/olap-treeview.png");
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+.e-olapclient .dimensionCDB {
+  background-position: 0 -1186px;
+}
+.e-olapclient .folderCDB {
+  background-position: 0 -1250px;
+}
+.e-olapclient .hierarchyCDB {
+  background-position: 0 -1314px;
+}
+.e-olapclient .attributeCDB {
+  background-position: 0 -990px;
+}
+.e-olapclient .chartCDB {
+  background-position: 0 -1056px;
+}
+.e-olapclient .namedSetCDB {
+  background-position: 0 -1445px;
+}
+.e-olapclient .level0 {
+  background-position: 0 0;
+}
+.e-olapclient .level1 {
+  background-position: 0 0;
+}
+.e-olapclient .level2 {
+  background-position: 0 -462px;
+}
+.e-olapclient .level3 {
+  background-position: 0 -528px;
+}
+.e-olapclient .level4 {
+  background-position: 0 -594px;
+}
+.e-olapclient .level5 {
+  background-position: 0 -660px;
+}
+.e-olapclient .level6 {
+  background-position: 0 -726px;
+}
+.e-olapclient .level7 {
+  background-position: 0 -792px;
+}
+.e-olapclient .level8 {
+  background-position: 0 -858px;
+}
+.e-olapclient .level9 {
+  background-position: 0 -924px;
+}
+.e-olapclient .level10 {
+  background-position: 0 -66px;
+}
+.e-olapclient .dialogOKBtn,
+.e-olapclient .dialogCancelBtn {
+  width: 69px;
+  margin-left: 10px;
+}
+.e-olapclient .dialogOKBtn {
+  margin-left: 83px;
+}
+.e-olapclient .editorPara {
+  margin: 0 0 7px;
+}
+.e-olapclient .dialogPara {
+  margin-top: 15px;
+}
+.e-olapclient .loadReportTbl {
+  margin: 10px 0px 20px 0px;
+}
+.e-olapclient .loadReportTd {
+  width: 100px;
+}
+.e-olapclient .dialogInput {
+  float: right;
+  margin-top: -31px;
+}
+.e-olapclient .checkAll,
+.e-olapclient .unCheckAll {
+  background-image: url("images/olap-treeview.png");
+  display: inline-block;
+  height: 15px;
+  width: 16px;
+  cursor: pointer;
+}
+.e-olapclient .checkAll {
+  background-position: center -1641px !important;
+  margin: 0px;
+}
+.e-olapclient .unCheckAll {
+  background-position: center -1709px !important;
+  margin-left: 5px;
+}
+.e-olapclient .memberEditorDiv {
+  height: 256px;
+  margin-top: 5px;
+  border: 1px solid #bbbcbb;
+}
+.e-olapclient .removeSplitBtn,
+.e-olapclient .removeMeasure {
+  background-image: url("images/olap-treeview.png");
+  background-repeat: no-repeat;
+  height: 11px;
+  padding-left: 10px;
+  width: 11px;
+}
+.e-olapclient .removeSplitBtn {
+  background-color: #c1272d;
+  background-position: 4px -1835px !important;
+  border: 1px solid #bbbcbb;
+  display: none;
+  float: none;
+  margin: 0 !important;
+  padding-bottom: 7px;
+  padding-right: 0;
+  position: absolute;
+}
+.e-olapclient .removeMeasure {
+  background-position: 0 -1835px !important;
+  margin: 4px;
+}
+.e-olapclient .measureEditor {
+  margin: 3px 5px 0px 5px;
+}
+.e-olapclient .measureEditor:hover {
+  color: white;
+  background: #5eabde;
+  cursor: pointer;
+}
+.e-olapclient .nodetext {
+  font-size: inherit !important;
+}
+.e-olapclient .e-dialog {
+  font: bold 12px Segoe UI !important;
+  opacity: 1 !important;
+}
+.e-olapclient .e-corner-all {
+  border-radius: 0px !important;
+}
+.e-olapclient .e-button {
+  font-size: 12px !important;
+}
+.e-olapclient .e-treeview {
+  background-color: White;
+}
+.e-olapclient .e-treeview ul {
+  margin: 0;
+}
+.e-olapclient .e-treeview,
+.e-olapclient .e-text {
+  font-size: 12px;
+}
+.e-olapclient .e-tab,
+.e-olapclient .e-header {
+  width: auto;
+}
+.e-olapclient .e-tab,
+.e-olapclient .e-active-content {
+  padding: 0;
+}
+.e-olapclient .e-tab,
+.e-olapclient .e-content {
+  border-width: 0;
+}
+.e-olapclient .e-toolbar {
+  border-width: 1px 0;
+}
+.e-olapclient .e-input {
+  line-height: normal !important;
+}
+.e-olapclient .e-progress-txt {
+  top: -2px !important;
+}
+.clientProgressContainer {
+  width: 385px;
+  height: 140px;
+  font-size: 14px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 5px 1px #c4c4c4;
+  color: #5c5c5c;
+}
+.clientProgressBar {
+  width: 320px;
+  height: 16px;
+  top: 65px;
+  left: 30px;
+  position: absolute;
+}
+.clientProgressText {
+  width: 379px;
+  padding: 8px 0px 0px 6px;
+  height: 30px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #c4c4c4;
+  box-shadow: 0px 0px 2px 1px #c4c4c4;
+}
+
+/*-----------------------OLAP Definition-----------------*/
+.e-olapchart {
+  font: normal 12px Segoe UI;
+  border: 1px solid #bbbcbb;
+  background-color: White;
+  color: #5c5c5c;
+}
+.e-olapchart .expandMenu {
+  min-height: 50px;
+}
+.e-olapchart .menuList {
+  list-style-type: none;
+  padding: 4px 15px 4px 15px;
+}
+.e-olapchart .menuList:hover {
+  list-style-type: none;
+  color: white;
+  background: #5eabde;
+  cursor: pointer;
+}
+.e-olapchart .e-dialog,
+.e-olapchart .e-wrapper,
+.e-olapchart .e-shadow {
+  min-height: 50px;
+}
+.e-olapchart .e-dialog,
+.e-olapchart .e-content {
+  padding: 0;
+  min-width: 150px;
+}
+.progressContainer {
+  width: 360px;
+  height: 70px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 5px 1px #c4c4c4;
+  color: #5c5c5c;
+}
+.progressBar {
+  width: 300px;
+  height: 16px;
+  top: 25px;
+  left: 30px;
+  position: absolute;
+}
+.progressText {
+  width: 350px;
+  height: 20px;
+  top: 0px;
+  left: 30px;
+  fontSize: 16px;
+  position: absolute;
+}

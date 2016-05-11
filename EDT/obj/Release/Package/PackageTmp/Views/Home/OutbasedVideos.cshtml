@@ -1,0 +1,97 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+  <div class="indxLft2">
+        <div class="overview">
+            <br />
+            <h2>VRE Out-based Employee Videos</h2>
+            
+
+        </div>
+    </div>
+   
+
+
+<div class="pagecontent1">
+
+ 
+    <br />
+        <p class="breadcrumb"><a href="~/">Home</a> > <a href="~/Home/TrainingResources">Training Resources</a> > VRE Out-based Employee Videos</p>
+
+    <h3>VRE Out-based Employee Videos</h3>
+
+    <br />
+
+    <p><b>Reminder:</b> Do not click directly on these links to watch these videos as they will timeout before they're complete! Please right-click on the link and save these video files to your computer prior to watching and remember to return to the TMS to record completion.</p>
+
+    <ul class="listfont">
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/Blast_Injuries.zip" title="Zip File" target="_blank">Blast Injuries Real Wounds People Recovery</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/CADs.zip" title="Zip File" target="_blank">Cognitive Assistive Devices</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/CHTW.zip" title="Zip File" target="_blank">Coming Home to Work</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/VRE_Compensated.zip" title="Zip File" target="_blank">Compensated Work Therapy</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/CWINRS_Experienced1-2.zip" title="Zip File" target="_blank">CWINRS for Experienced Users Parts 1 and 2</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/CWINRS_New1.zip" title="Zip File" target="_blank">CWINRS for New Users Part 1</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/CWINRS_New2.zip" title="Zip File" target="_blank">CWINRS for New Users Part 2</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/CWINRS_New3.zip" title="Zip File" target="_blank">CWINRS for New Users Part 3</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/EAA.zip" title="Zip File" target="_blank">Employment Adjustment Allowance</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/EPRSA.zip" title="Zip File" target="_blank">Evaluation &amp; Planning and Rehabilitation Services Accuracy (EPRSA)</a> </li>
+        
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/FAI.zip" title="Zip File" target="_blank">Fiscal Accuracy and Integrity</a> </li>
+        
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/FCE.zip" title="Zip File" target="_blank">Functional Capacity Evaluations</a> </li>
+
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/MedCare_VetsAmps.zip" title="Zip File" target="_blank">Medical Care for Veterans with Amputations</a> </li>
+
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/PerfStndrds.zip" title="Zip File" target="_blank">Performance Standards</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/POA.zip" title="Zip File" target="_blank">Program Outcome Accuracy</a> </li>
+
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/PTSD_VRC-role.zip" title="Zip File" target="_blank">PTSD: The Vocational Rehabilitation Counselors Role</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/PCM.zip" title="Zip File" target="_blank">Purchase Card Management</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/PurchaseCards.zip" title="Zip File" target="_blank">Purchase Cards</a> </li>
+
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/TBI-VRE_CounsRole.zip" title="Zip File" target="_blank">TBI: VR&amp;E Counselor's Role</a></li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/USERRA.zip" title="Zip File" target="_blank">The Uniformed Services Employment and Reemployment Rights Act (USERRA)</a> </li>
+        
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/VetsVRE_WrkTog.zip" title="Zip File" target="_blank">Veterans and VR&amp;E Working Together</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/VR_VetsAmps.zip" title="Zip File" target="_blank">Vocational Rehabilitation for Veterans with Amputations</a> </li>
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/WarAfricanUS.zip" title="Zip File" target="_blank">War On Many Fronts</a> </li>
+       
+        <li><a href="http://vbaw.vba.va.gov/bl/edt/WomenMilitary.zip" title="Zip File" target="_blank">Women Who Served in Our Military</a> </li>
+
+    </ul>
+
+    </div>
+
+    @section scripts
+    {
+        <script language="javascript">
+            $(document).ready(function() {
+                var $lft = $(".indxLft");
+                var $rght = $(".indxRight");
+                var hl = $lft.height();
+                var hr = $rght.height();
+                var bp;
+
+                if (hl > hr) {
+
+                    $rght.height(hl);
+
+                } else if (hr > hl) {
+                    bp = hr - hl;
+                    $lft.height(hr);
+                    $lft.css("background-position-y", bp);
+                }
+
+            });
+
+        </script>
+
+    }

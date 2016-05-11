@@ -1,0 +1,64 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+  <div class="indxLft2">
+        <div class="overview">
+            <br />
+            <h2>VBA Virtual Schoolhouse</h2>
+            <p style="margin-top: 5px;">VBA Virtual Schoolhouse is a centralized classroom environment for VBA employees and instructors.</p>
+            
+
+        </div>
+    </div>
+   
+
+
+<div class="pagecontent1">
+
+ 
+    <br />
+        <p class="breadcrumb"><a href="~/">Home</a> > VBA Virtual Schoolhouse</p>
+    <h3><u><strong>VBA Virtual Schoolhouse</strong></u></h3>
+    <br />
+    
+        <p>Only those VBA employees who have been pre-registered for training are able to access the VBA Virtual Schoolhouse.</p>
+
+    <p>If you have received notification that you are registered for virtual training, please click the link below to access the VBA Virtual Schoolhouse <a href="https://iwt.gdit.com/moodle/" target="_blank">login</a> page.</p>
+
+    <p>If you are not registered for virtual training, please return to the ED&amp;T <a href="~/">homepage</a>. </p>
+
+    </div>
+
+    @section scripts
+    {
+        <script language="javascript">
+            $(document).ready(function() {
+                var $lft = $(".indxLft");
+                var $rght = $(".indxRight");
+                var hl = $lft.height();
+                var hr = $rght.height();
+                var bp;
+
+                if (hl > hr) {
+
+                    $rght.height(hl);
+
+                } else if (hr > hl) {
+                    bp = hr - hl;
+                    $lft.height(hr);
+                    $lft.css("background-position-y", bp);
+                }
+
+            });
+
+        </script>
+
+    }

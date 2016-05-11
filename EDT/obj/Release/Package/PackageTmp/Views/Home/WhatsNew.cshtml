@@ -1,0 +1,70 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+  <div class="indxLft2">
+        <div class="overview">
+            <h2>What's New</h2>
+            <br />
+
+        </div>
+    </div>
+   
+
+
+<div class="pagecontent1">
+
+ 
+    <br />
+        <p class="breadcrumb"><a href="~/">Home</a> > What's New</p>
+    <h4><u><strong>April 15, 2015</strong></u></h4>
+    <br />
+    <p>
+        The Office of Employee Development and Training (ED&T) is hosting a symposium for VBA Training Managers from May 11 – May 15, 2015 in Florida. To register for the symposium, click <a href="https://www.ttande.org/evaluation/uniserv_level1/form/default.asp?cid=857" target="_blank">here</a>
+    </p>
+
+    <hr />
+        
+    <h4><u><strong>January 27, 2015</strong></u></h4>
+    <br />
+    <p>VBA is now a member of the Treasury Executive Institute (TEI), which is a training Center of Excellence that provides leadership, management, and public sector training designed specifically for members of the Senior Executive Service and their senior staff members (GS 14s & 15s). The Institute exists to bring the best training on leadership, management, public service, and contemporary issues to senior leaders.
+</p>
+    <p><a href="~/Documents/5-21-13_TEI_booklet_FY13.pdf" target="_blank">TEI booklet</a></p>
+    <p><a href="~/Documents/Informational_Letter.pdf" target="_blank">TEI Informational Letter</a></p>
+    <p><a href="~/Documents/TEI_Fall_Winter_Catalog.pdf" target="_blank">TEI Fall/Winter Catalog</a></p>
+
+
+    </div>
+
+    @section scripts
+    {
+        <script language="javascript">
+            $(document).ready(function() {
+                var $lft = $(".indxLft");
+                var $rght = $(".indxRight");
+                var hl = $lft.height();
+                var hr = $rght.height();
+                var bp;
+
+                if (hl > hr) {
+
+                    $rght.height(hl);
+
+                } else if (hr > hl) {
+                    bp = hr - hl;
+                    $lft.height(hr);
+                    $lft.css("background-position-y", bp);
+                }
+
+            });
+
+        </script>
+
+    }

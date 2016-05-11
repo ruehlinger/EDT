@@ -1,0 +1,65 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+  <div class="indxLft2">
+        <div class="overview">
+            <h2>Sitemap</h2>
+            <br />
+
+        </div>
+    </div>
+   
+
+
+<div class="pagecontent1">
+
+ 
+    <br />
+        <p class="breadcrumb"><a href="~/">Home</a> > Sitemap</p>
+
+    <h3>Sitemap</h3>
+    <br />
+    <p><a href="http://vbaw.vba.va.gov/" title="Opens new window" target="_blank" class="site_font">VBA Intranet Home</a></p>
+    <p><a href="http://orlandodemo.camber.com/CBTS">VBA Competency-based Training</a></p>
+    <p><a href="~/Home/TrainingResources">Training Resources</a></p>
+    <p><a href="http://vaww.infoshare.va.gov/sites/EDT/Lists/VBA%20Training%20Calendar/VBA%20Training%20Calendar%20All.aspx">VBA Training Calendar</a></p>
+    <p><a href="~/Home/StaffListing">Staff Listing</a></p>
+    <p><a href="~/Home/Calendar/">How are we doing?</a></p>
+    <p><a href="#">Site Map</a></p>
+    <p><a href="https://www.tms.va.gov/learning/user/login.jsp">VA Talent Management System (TMS)</a></p>
+
+    </div>
+
+    @section scripts
+    {
+        <script language="javascript">
+            $(document).ready(function() {
+                var $lft = $(".indxLft");
+                var $rght = $(".indxRight");
+                var hl = $lft.height();
+                var hr = $rght.height();
+                var bp;
+
+                if (hl > hr) {
+
+                    $rght.height(hl);
+
+                } else if (hr > hl) {
+                    bp = hr - hl;
+                    $lft.height(hr);
+                    $lft.css("background-position-y", bp);
+                }
+
+            });
+
+        </script>
+
+    }

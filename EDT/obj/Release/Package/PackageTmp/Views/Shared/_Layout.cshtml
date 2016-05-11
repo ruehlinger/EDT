@@ -1,0 +1,225 @@
+﻿@using System
+@*@using Syncfusion.Mvc.Shared*@
+@using EDT.Models
+@using EDT.Infrastructure
+@using Utils = EDT.Infrastructure.Utils
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon"
+          type="image/x-icon" />
+
+    @Styles.Render("~/bundles/bscss")
+
+
+    <!--[if lte IE 9]>
+        <link href="~/Scripts/boxsizing.htc" rel="text/x-component">
+        <script src="~/Scripts/html5shiv.js"></script>
+    <![endif]-->
+    @{
+        ViewBag.SiteTitle = "VBA ED&T";
+        ViewBag.Version = "v.1.0";
+        ViewBag.LastUpdate = "Feb 16 2015";
+
+
+        var browser = Request.Browser;
+        ViewBag.Browser = browser;
+        var nogo = (browser.Browser == "IE" && browser.Version == "7.0");
+        if (nogo)
+        {
+            @Styles.Render("~/bundles/css-ie7")
+            ;
+            @Styles.Render("~/bundles/bscss-ie7")
+            ;
+        }
+       
+        else
+        {
+            @Styles.Render("~/Content/ej.widgets.core.min.css")
+            @Styles.Render("~/Content/ej/ej.widgets.all.min.css")
+            @Styles.Render("~/Content/ej/flat-azure-dark/ej.theme.min.css")
+            @*@Styles.Render("~/bundles/ej")*@
+            @Styles.Render("~/bundles/css")
+        }
+    }
+
+    <!--
+        Flexdown is unsused progressive menu library
+        -->
+    @*@Styles.Render("~/Content/flexdown.css")*@
+    @*@Styles.Render("http://nttlsrv01/VBAResourceStore/Content/site.css");*@
+
+    <!--LOADING 1-->
+    <!--
+        <link href="~/Content/ej.widgets.core.min.css" rel="stylesheet" />
+        <link href="~/Content/ej/ej.widgets.all.min.css" rel="stylesheet" />
+        <link href="~/Content/ej/flat-azure-dark/ej.theme.min.css" rel="stylesheet" />-->
+    @*@Styles.Render("~/bundles/ej")
+        @Styles.Render("~/bundles/css")*@
+    <!--<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/theme/ej.web.all.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <script src="~/Scripts/jquery.easing-1.3.min.js"></script>
+        <script src="~/Scripts/jquery.globalize.js"></script>-->
+    @*@(Html.Syncfusion().StyleManager().Combine(false).Minify(false)
+          .Register(component =>
+                    {
+                        component.Add(ComponentType.Grid);
+                        component.Add(ComponentType.Chart);
+                        component.Add(ComponentType.Accordion);
+                        component.Add(ComponentType.Schedule);
+
+                    })
+        )*@
+    @RenderSection("styles", required: false)
+    @{
+        if (!Utils.IsCurrentControllerAndAction("home", "index", ViewContext))
+        {
+            <style>
+                .welcomeBar span {
+                    font-size: 18px;
+                }
+            </style>
+        }
+    }
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/respond")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/ejjs")
+    @Scripts.Render("~/bundles/easejs")
+</head>
+<body>
+    <header>
+        <div class="content-wrapper container">
+            <div class="pull-left col-md-7 col-xs-7 site-logo-block">
+                <p><img src="~/Images/inter-header-banner-top.png" style="margin-left: -50px; z-index: 0" usemap="#VBA" /></p>
+                
+                <map name="VBA">
+
+                    <area shape="circle" coords="76,45,45" alt="Home" href="~/" style="border: none;" />
+
+                </map>
+                
+                
+                
+                <!--div id="logoVBA" class="pull-left"
+                     title="Go to va.gov" data-toggle="tooltip">
+                    <a href="http://www.va.gov" style="background: none;">
+                        <img src="~/Images/logo.png" style="border: none;"
+                             alt="Official seal of the United States Department of Veterans Affairs" />
+                    </a>
+                </div>
+
+                <div class="vert-line"></div>
+                <h1 class="site-title"><a href="~/" data-toggle="tooltip" title="@ViewBag.SiteTitle Home">@ViewBag.SiteTitle</a></h1>
+                <div id="logoEDT" style="margin-top: 15px;">
+                    <img src="~/Images/EDT_Logo1.png" style="border: none" alt="Logotype of Employee Development and Training" />
+                </div>
+                 -->
+            </div>
+            <!-- SEARCH BOX  -->
+            <div class="pull-right hidden-xs searchbox" role="search" style="margin-top: 15px;">
+                        <div class="input-group">
+                                <input type="text" name="searchInput" class="form-control" placeholder="Search" />
+                                <div id="btnSearch" class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+                            </div>
+              
+               
+                
+            </div>
+            <!--END SEARCH BOX -->
+
+        </div>
+    </header>
+    <div id="body">
+        <section class="content-wrapper main-content clear-fix container">
+            @if (!nogo)
+            {
+
+                Html.RenderPartial("_NavigationMain", new NavigationMain());
+
+                    <!-- MAIN SECTION -->
+                <section id="section-main">
+                    <div id="main">
+                        <section id="main-left">
+                            <!-- TODO: LEFT MENU -->
+                            @{
+
+                Html.RenderPartial("_NavigationLeft00", new NavigationLeft());
+                            }
+                            <div class="spacer"></div>
+                        </section>
+                        <div class="clear"></div>
+                        <!-- TODO: VIEWPORT -->
+                        <section id="main-right" style="margin-top: -179px;">
+                            <div id="content">
+                                <!--<div id="chevrons" style="margin-right: -220px !important; width: 737px;">
+                                    <div class="welcomeBar">
+                                        <span style="font-size: 18px;">@ViewBag.Location</span>
+
+                                    </div>
+
+
+                                </div>
+                                -->
+
+
+                                    <div class="siteContent clear-fix">
+                                        @RenderBody()
+                                    </div>
+ 
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            <!-- MAIN SECTION END -->
+            }
+            else
+            {
+                Html.RenderPartial("_NonCompliant", new NavigationMain());
+            }
+           
+        </section>
+
+        @* @RenderSection("featured", required: false)*@
+
+    </div>
+
+    @{
+        Html.RenderPartial("_Footer", new Footer());
+
+    }
+
+
+    <!--LOADING BOTTOM-->
+    @*@{Html.Syncfusion().ScriptManager().Combine(true).Minify(true).Render();}*@
+    @(Html.EJ().ScriptManager())
+    <script type="text/javascript">
+        $(function () {
+            $('#page').css("min-height", $(document).height());
+        });
+    </script>
+    @* @Scripts.Render("~/bundles/flexdownjs")*@
+    @Scripts.Render("~/bundles/sitejs")
+
+    @RenderSection("scripts", required: false)
+
+    @*<script type="text/javascript">
+        jQuery(function ($) {
+            $("#nav").ejMenu({
+                menuType: ej.menuType.NormalMenu,
+                orientation: ej.orientation.Horizontal,
+                width: 960,
+                height: 52
+            });
+        });
+        </script>*@
+</body>
+</html>

@@ -1,0 +1,282 @@
+﻿.content-wrapper .presentationPanel01 {
+    background: transparent;
+}
+
+header .content-wrapper {
+    background: transparent;
+    background-image: none;
+    padding: 0;
+    top: 15px;
+    position: relative;
+    height: 7.5em;
+    padding: 0;
+}
+
+
+.featured .content-wrapper {
+    background: transparent;
+}
+
+
+.main-content {
+    background-image: none !important;
+    padding: 0;
+    max-width: 1000px;
+}
+
+.main-panel {
+    border-radius: 14px;
+    min-width: 400px;
+    max-width: 962px;
+    margin: 0 auto !important;
+    background: white;
+}
+
+
+.nav-custom > li > a:link, .nav-custom > li > a:visited {
+    background-color: rgb(178, 193, 226);
+}
+
+.nav-custom > li > a:active, .nav-custom > li > a:hover {
+    background-color: rgb(130, 140, 179);
+    color: white !important;
+}
+
+.nav-btm-custom > li > a:link, .nav-btm-custom > li > a:visited {
+    background-color: #0177c0;
+}
+
+.nav-btm-custom > li > a:active, .nav-btm-custom > li > a:hover {
+    background-color: rgb(132, 186, 253);
+    color: black !important;
+}
+
+.well-sm {
+    border-radius: 16px;
+}
+
+.input-sm {
+    padding: 5px 0;
+}
+
+.tile-ancor {
+    background-color: #378fd0;
+    width: inherit;
+    border-style: none;
+    border-radius: 12px;
+}
+
+.tile-ancor-transparent {
+    background-color: transparent;
+    width: inherit;
+    border-style: none;
+    border-radius: 12px;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+}
+
+.tile-base {
+    width: 130px;
+    height: 130px;
+    border-radius: 12px;
+}
+
+
+.BalloonConstrain {
+    padding: 30px 80px 30px 70px !important;
+}
+
+.tilesRow {
+    margin: 10px auto 0 auto;
+}
+
+#logoVBA a:hover {
+    background: none;
+}
+
+.tiles {
+    margin: 10px 33px;
+    padding: 0;
+}
+
+.bkgrImage {
+    background: Url("../Images/US_flag00.png") no-repeat left 0;
+    background-color: transparent;
+    margin-bottom: -20px;
+    border-radius: 14px;
+}
+
+.indxRight {
+    background: Url("../Images/bg-explore-form.jpg") no-repeat left 0;
+    font-size: 2.3em;
+    width: 276px;
+    text-align: center;
+    float: right;
+    height: 287px;
+    background-color: #062659;
+    box-shadow: 10px black inset;
+}
+/*.indxRight {
+    background: Url('@Url.Content("~/Images/bg-explore-form.jpg")') no-repeat left 0;
+    font-size: 2.3em;
+    width: 276px;
+    text-align: center;
+    float: right;
+    background-color: #062659;
+}*/
+
+
+.indxLft {
+    background: url("../Images/viewportSplash.jpg") no-repeat left 0;
+    width: 737px;
+    height: 287px;
+    float: left;
+    background-color: #071a3a;
+}
+.indxLft2 {
+    background: url("../Images/viewportSplash2.jpg") no-repeat left 0;
+    width: 737px;
+    height: 150px;
+    float: left;
+    background-color: #071a3a;
+    margin-left: 222px;
+ 
+    
+}
+
+.pagecontent {
+    background: url("../Images/insetShadow.jpg") repeat-x left 0 white;
+    width: 737px;
+    height: auto;
+    margin: 0;
+    padding-bottom: 55px;
+    padding-left: 40px;
+    padding-right: 30px;
+    margin-top: 42px;
+    float: left;
+      
+}
+
+.pc_textlft {
+float: left;
+width: 368.5px;
+height: auto;
+margin-left: -30px;
+}
+.pc_whatsnew {
+float: right;
+width: 320px;
+height: auto;
+margin-left: 5px;
+text-align: center;
+}
+
+
+.whats_new {
+    text-align: center !important;
+color: #a42d2d;
+
+}
+
+
+
+
+.shadow {
+    background-image: url(../Images/insetShadow.jpg);
+    width: 737px;
+    height: 30px;
+}
+
+.pagecontent h3 {
+    color: #a42d2d !important;
+    font-weight: bold;
+}
+.pagecontent h2 {
+    color: #a42d2d !important;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.pagecontent1 {
+    background: url("../Images/insetShadow.jpg") repeat-x left 0 white;
+    width: 737px;
+    height: auto;
+    min-height: 400px;
+    margin: 0;
+    padding-bottom: 55px;
+    padding-left: 40px;
+    padding-right: 30px;
+    float: left;
+    margin-left: 223px;
+
+    
+}
+
+
+
+
+.pagecontent1 h3 {
+    color: #a42d2d !important;
+    font-weight: bold;
+}
+.pagecontent1 h2 {
+    color: #a42d2d !important;
+    text-align: center;
+    margin-left: 200px;
+}
+
+
+#con_2 {
+background-color: #FFF;
+width: 960px;
+height: 250px;
+
+}
+#con_3 {
+background-color: #FFF;
+width: 737px;
+height: 250px;
+
+}
+
+.glossarytable td{
+    padding: 5px;
+    border:solid; 
+    border-width:thin;
+}
+
+.slide_desc {
+    margin-left: -22px;
+    width: 226px;
+    margin-top: -40px;
+}
+#staff_listing_table {
+	border: 1px solid #CCC;
+	padding: 5px;
+    
+}
+
+#staff_listing_table th {
+	background-color: #faf2f2;
+	border: 1px solid #CCC;
+    
+}
+
+#staff_listing_table td {
+	border: 1px solid #CCC;
+	padding: 5px;
+}
+#staff_listing_table td a:hover {
+    text-decoration: none;
+
+}
+
+.staff_listing_table_alt {
+	background-color: #eaeaea;
+}
+.sl_header {text-align:center; text-decoration: underline;
+}
+.sl_header:hover {text-decoration: none;
+}
+

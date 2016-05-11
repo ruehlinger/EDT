@@ -1,0 +1,63 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+    <div class="indxLft2">
+        <div class="overview">
+            <h2>Briefing Tools</h2>
+            <br />
+            <p>
+                Posters, flyers, and other information that you may need to brief your team. 
+            </p>
+        </div>
+    </div>
+   
+
+
+<div class="pagecontent1">
+    <h3>Management Tools</h3>
+  
+    <p>These tools provide the information needed to brief your employees on the VBA Competency-based Training System (EDT). 
+</p>
+    <h3>Employee Tools</h3>
+    <p>
+        These tools provide the information that will help  each employee gain a better understanding of the VBA Competency-based Training System (EDT).
+
+    </p>
+
+   
+
+    </div>
+
+    @section scripts
+    {
+        <script language="javascript">
+            $(document).ready(function() {
+                var $lft = $(".indxLft");
+                var $rght = $(".indxRight");
+                var hl = $lft.height();
+                var hr = $rght.height();
+                var bp;
+
+                if (hl > hr) {
+
+                    $rght.height(hl);
+
+                } else if (hr > hl) {
+                    bp = hr - hl;
+                    $lft.height(hr);
+                    $lft.css("background-position-y", bp);
+                }
+
+            });
+
+        </script>
+
+    }

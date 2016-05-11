@@ -1,0 +1,68 @@
+﻿<footer>
+    <div id="divider00"></div>
+    <div id="divider01"></div>
+    <div class="content-wrapper">
+        <div class="row">
+            <div id="help" class="col-sm-3" @*style="background: orchid;*@ ">
+                <dl>
+                    <dt>Questions?</dt>
+                    <dd>
+                        Contact the <a href="mailto:VBAWebsiteSupport@camber.com">Webmaster</a> for any questions regarding this website.
+                    </dd>
+                </dl>
+
+            </div>
+            <div id="links" class="col-sm-6">
+                <ul>
+                    <li>Section 508 Accessiblity</li>
+                    <li>Intranet Privacy Policy</li>
+                    <li>No Fear Act</li>
+                    <li>Warning Notices</li>
+                    <li>VA Intranet</li>
+                </ul>
+                <ul>
+                    <li>Home</li>
+                    <li>VHA Intranet Home</li>
+                    <li>VBA Intranet Home</li>
+                    <li>NCA Intranet Home</li>
+                    <li>VA Intranet Search</li>
+                </ul>
+                <ul>
+                    <li><h1 class="fb-ico"><a href=" https://www.facebook.com/VeteransBenefits" data-toggle="tooltip" title="ED&T Facebook" target="_blank"><img src="~/Images/fb_ico.png" alt="Facebook Icon - ED&T Facebook" /></a> <a href="https://www.vapulse.net/welcome" data-toggle="tooltip" title="VA Pulse" target="_blank"><img src="~/Images/pulse_ico.png" alt="VA Pulse Icon - ED&T VA Pulse" /></a></h1></li>
+                </ul>
+
+            </div>
+
+            
+            <div id="acrobat" class="col-sm-3 pull-right">
+                <div class="row">
+
+                    <div class="pull-left" style="padding-top: 12px;"><img src="@Url.Content("~/Images/pdfLogo.jpg")" alt="Click here to download Acrobat Reader from Adobe" /></div>
+
+                    <div class="col-sm-9 pull-right">
+                        You will read Adobe Acrobat Reader to view some
+                        of the files on this website. If you are unable to
+                        view the files click on the Acrobat button to the
+                        left to download and install the Adobe Acrobat Reader.
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="row versionInfo">
+            <div class="float-left">
+                <p>
+                    &copy; @DateTime.Now.Year - @ViewBag.Title - Last updated: @ViewBag.LastUpdate;
+                </p>
+            </div>
+            <div class="float-right" style="margin-right: -14px;">
+                <p>@ViewBag.Version (Your browser: @ViewBag.Browser.Browser-@ViewBag.Browser.Version)</p>
+
+            </div>
+        </div>
+        
+
+    </div>
+</footer>

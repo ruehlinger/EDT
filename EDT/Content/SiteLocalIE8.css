@@ -1,0 +1,12 @@
+﻿.tileCaption {
+    padding: 0;
+    margin: 0 auto -40px auto;
+    text-align: center;
+    font-size: 0.8em;
+    /*width: inherit;*/
+    line-height: 9px;
+}
+
+/*.bkgrImage {
+    margin-bottom: 0;
+}*/

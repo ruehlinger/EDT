@@ -1,0 +1,32 @@
+﻿@model EDT.Models.Announcement
+
+@{
+    var newsCopy = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...";
+}
+
+
+<section id="newsBalloon" class="featured  collapse in">
+    <div class="content-wrapper BalloonConstrain">
+        <div class="presentationPanel00">
+            <div class="well-sm well-nav class_box_shadow gradientLightBlue90">
+                <a id="newsBalloonRemove" class="btn btn-xs btn-info pull-right" data-toggle="collapse" href="#newsBalloon" title="Close the blog. To re-open click loud speaker"><span class="glyphicon glyphicon-remove"></span></a>
+                <div class="container row" style="width: inherit !important; height: 90px;">
+                    <div id="icoTileAnnouncement" class="pull-left"></div>
+                    <div class="newsBalloon">
+                        <div id="NewsRotator" style="width: 90%; height: 100px;">
+                            <p id="title"></p>
+                            <p id="copy"></p>
+                            <p id="path" style="display: none;"></p>
+                            <a id="action" href="#" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="newsControls">
+                        <a id="btnNextAnnouncement" class="btn btn-xs btn-info pull-right" href="#" title="Next Announcement"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                        <a id="btnPrevAnnouncement" class="btn btn-xs btn-info pull-right" href="#" title="Previous Announcement"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

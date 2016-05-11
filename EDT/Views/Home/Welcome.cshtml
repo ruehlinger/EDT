@@ -1,0 +1,95 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+  <div class="indxLft2">
+        <div class="overview">
+            <br />
+            <h2>Welcome</h2>
+            
+
+        </div>
+    </div>
+   
+
+
+<div class="pagecontent1">
+
+ 
+    <br />
+        <p class="breadcrumb"><a href="~/">Home</a> > Welcome</p>
+    <h3><u><strong>Welcome to the New ED&amp;T Website!</strong></u></h3>
+    <br />
+
+    <div class="row">
+        <div class="col-md-3" style="margin-left: -70px;"><h2>Old:</h2></div>
+        <div class="col-md-3" style="margin-left: 150px;"><h2>New:</h2></div>
+    </div>
+    <br />
+    <p>
+       <img src="~/Images/transform.png" alt="Image showing the transformation between the old ED&T site and the new one" style="margin-left: -25px;" /> 
+    </p>
+    
+    <div class="row">
+        <div class="col-md-4">
+            <p>
+                <b>New Features:</b>
+
+                <ul>
+                    <li>One-Stop Shop for All Training</li>
+                    <li>Cutting Edge Design</li>
+                    <li>Better Functionality</li>
+                    <li>Mobile Friendly</li>
+                    <li>Easy Accessibility</li>
+                </ul>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <p>
+                <b>New Content:</b>
+
+                <ul>
+                    <li>VBA Virtual Schoolhouse Access (Access to virtual training)</li>
+                    <li>Training Development Support (Tools for developing training)</li>
+                    <li>Evaluation Portal (Survey data)</li>
+                    <li>Training Resources (Service-specific training resources)</li>
+                    
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    </div>
+
+    @section scripts
+    {
+        <script language="javascript">
+            $(document).ready(function() {
+                var $lft = $(".indxLft");
+                var $rght = $(".indxRight");
+                var hl = $lft.height();
+                var hr = $rght.height();
+                var bp;
+
+                if (hl > hr) {
+
+                    $rght.height(hl);
+
+                } else if (hr > hl) {
+                    bp = hr - hl;
+                    $lft.height(hr);
+                    $lft.css("background-position-y", bp);
+                }
+
+            });
+
+        </script>
+
+    }

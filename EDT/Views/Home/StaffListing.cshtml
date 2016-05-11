@@ -1,0 +1,395 @@
+﻿@using System.Web.Hosting
+@using EDT.Models
+@{
+    ViewBag.Title = "VBA EDT";
+    var tilestyle = ViewBag.Dev ? "thumbnail" : "thumbnaildisabled thumbnail disabled";
+
+}
+
+@section styles
+{
+    }
+  <div class="indxLft2">
+        <div class="overview">
+            <h2>Staff Listing</h2>
+            <br />
+
+        </div>
+    </div>
+   
+
+
+<div class="pagecontent1">
+
+
+    <br />
+    <p class="breadcrumb"><a href="~/">Home</a> > Staff Listing</p>
+
+    <h3>Staff Listing</h3>
+
+    <table style="background-color:#FFF;" width="737" border="0" cellpadding="0" cellspacing="0" summary="Table containing a Staff Listing" >
+       
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" id="staff_listing_table">
+                    <tr>
+                        <th class="sl_header"><a title="Washington" href="#EDT">Central Office Staff (DC)</a></th>
+                        <th class="sl_header"><a title="Baltimore" href="#VBA">Academy Staff (Baltimore)</a></th>
+                        <th class="sl_header"><a title="Orlando" href="#TTE">TT&amp;E Staff (Orlando)</a></th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="staff_listing_table_alt">
+                            <a name="EDT" id="EDT"></a><b>
+                                ED&amp;T Headquarters (20M5)<br />
+                                1800 G Street, NW<br />
+                                Washington, DC  20420<br />
+                                Office Main Number, rings on all desks: (202) 461-9860<br />
+                                Office Fax Number: (202) 495-5753
+                            </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="padding: 5px;" width="40%">Name</th>
+                        <th style="padding: 5px;" width="35%">Direct Office Phone Number</th>
+                        <th style="padding: 5px;" width="25%">Cell Phone Number</th>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:Catherine.Campbell@va.gov" target="_blank">Dr. Catherine L. Campbell</a> (Director)</td>
+                        <td><div align="left">(202) 461-9860</div></td>
+                        <td><div align="left">(202) 308-3308 (Blackberry)</div></td>
+                    </tr>
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:William.Sanderson@va.gov" target="_blank">Bill Sanderson</a> (Deputy Director)</td>
+                        <td><div align="left">(202) 461-9863</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 436-6205<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:lenora.dowe@va.gov" target="_blank">Lenora Dowe</a></td>
+                        <td><div align="left">(202) 461-9743</div></td>
+                        <td>
+                            &nbsp;
+                            <div align="left"></div>
+                        </td>
+                    </tr>
+
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:Eric.Hollins@va.gov" target="_blank">Eric Hollins</a></td>
+                        <td><div align="left">(202) 461-9911</div></td>
+                        <td><div align="left">(240) 346-9079 (Cell)</div></td>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:Mark.Hawkins@va.gov" target="_blank">Mark Hawkins</a></td>
+                        <td><div align="left">(202) 461-9870</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 815-9654<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:michael.faughnan@va.gov">Michael J. Faughnan, Ph.D.</a></td>
+                        <td><div align="left">(202) 461-9668</div></td>
+                        <td>
+                            <div align="left">
+                                202-255-0347<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:Aaron.Lee@va.gov" target="_blank">Aaron Lee</a></td>
+                        <td><div align="left">(202) 461-9867</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 341-8501<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:onika.coke@va.gov" target="_blank">Onika Coke-Munoz</a></td>
+                        <td><div align="left">(202) 632-7342</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 384-3978<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:derek.lambert@va.gov" target="_blank">Derek Lambert</a></td>
+                        <td><div align="left">(202) 461-9147</div></td>
+                        <td>
+                            &nbsp;
+                            <div align="left"></div>
+                        </td>
+                    </tr>
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:John.Dominick@va.gov" target="_blank">John Dominick</a></td>
+                        <td><div align="left">(202) 461-9866</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 374-1581<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:Jamie.Gerwitz@va.gov" target="_blank">Jamie Gerwitz</a></td>
+                        <td><div align="left">(202) 461-9868</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 815-9492<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:Abolade.Thomas@va.gov" target="_blank">Abolade Thomas</a></td>
+                        <td><div align="left">(202) 461-9934</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 281-4250<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="mailto:christine.runstrom@va.gov" target="_blank">Christine Runstrom</a></td>
+                        <td><div align="left">(202) 461-9873</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 341-5560<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:Arthur.Edmonds@va.gov" target="_blank">Art Edmonds</a></td>
+                        <td><div align="left">(202) 461-9869</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 815-9478<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:Brian.Hoey@va.gov" target="_blank">Brian Hoey</a></td>
+                        <td><div align="left">(202) 461-9871</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 815-9657<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:richard.michi@va.gov" target="_blank">Rich Michi</a></td>
+                        <td><div align="left">(202) 530-9391</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 322-7754 (Cell)<br />
+                                FAX: 202-530-9456
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:lesley.young@va.gov" target="_blank">Lesley Young</a></td>
+                        <td><div align="left">(202) 461-9670</div></td>
+                        <td>
+                            <div align="left">
+                                (202) 368-6401 (Cell)<br />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="staff_listing_table_alt">
+                        <td>Office Main Number</td>
+                        <td><div align="left">(202) 461-9860</div></td>
+                        <td><div align="left">&nbsp;</div></td>
+                    </tr>
+                    <tr>
+                        <td>Office Fax Number</td>
+                        <td><div align="left">(202) 495-5754</div></td>
+                        <td><div align="left"></div>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="staff_listing_table_alt">
+                            <a name="VBA" id="VBA"></a><b>
+                                VBA Professional Development Academy<br />
+                                31 Hopkins Plaza, Suite G-100<br />
+                                Baltimore, MD  21201<br />
+                                Office Main Number, rings on all desks: (410) 230-4452<br />
+                                Office Shared Voicemail: (410) 230-4450, ext 3008 <br />
+                                Office Fax Number: (410) 230-4453
+                            </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="padding: 5px;" width="40%">Name</th>
+                        <th style="padding: 5px;" width="35%">Direct Office Phone Number</th>
+                        <th style="padding: 5px;" width="25%">Cell Phone Number</th>
+                    </tr>
+                    <tr>
+                        <td valign="top"><a href="mailto:douglas.hemphill@va.gov" target="_blank">Douglas Hemphill</a> (Academy Director)</td>
+                        <td valign="top"><div align="left">(410) 230-4450, ext 3002</div></td>
+                        <td valign="top">
+                            <div align="left">
+                                (202) 316-6527<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="staff_listing_table_alt">
+                        <td valign="top"><a href="mailto:Cheryl.Sherrell@va.gov" target="_blank">Cheryl Sherrell</a> (Instructional Systems Specialist)</td>
+                        <td valign="top"><div align="left">(410) 230-4450, ext 2115</div></td>
+                        <td valign="top"><div align="left">&nbsp;</div></td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><a href="mailto:Nichole.Miller@va.gov" target="_blank">Nichole Miller</a> (Program Specialist)</td>
+                        <td valign="top"><div align="left">(410) 230-4450, ext 3004</div></td>
+                        <td valign="top"><div align="left">&nbsp;</div></td>
+                    </tr>
+                    <tr class="staff_listing_table_alt">
+                        <td valign="top"><a href="mailto:jim.bloomquist@va.gov" target="_blank">Jim Bloomquist</a> (Multi-Media Analyst)</td>
+                        <td valign="top"><div align="left">(410) 230-4450, ext 3000</div></td>
+                        <td valign="top"><div align="left">(443) 992-3134</div></td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><a href="mailto:anthony.hill1@va.gov" target="_blank">Tony Hill</a> (Instructional Systems Specialist)</td>
+                        <td valign="top"><div align="left">(410) 230-4450, ext 3007</div></td>
+                        <td valign="top"><div align="left">(443) 992-3289</div></td>
+                    </tr>
+                    <tr class="staff_listing_table_alt">
+                        <td valign="top"><a href="mailto:Darrian.Ward@va.gov" target="_blank">Darrian Ward</a> (Virtual/Multi Media Analyst)</td>
+                        <td valign="top"><div align="left">(410) 230-4450, ext 2114</div></td>
+                        <td valign="top"><div align="left">&nbsp;</div></td>
+                    </tr>
+                    <tr>
+                        <td valign="top">Office Main Number</td>
+                        <td valign="top"><div align="left">(410) 230-4450, ext 3008</div></td>
+                        <td valign="top"><div align="left">&nbsp;</div></td>
+                    </tr>
+                    <tr class="staff_listing_table_alt">
+                        <td valign="top">Office Fax Number</td>
+                        <td valign="top"><div align="left">(410) 230-4453</div></td>
+                        <td valign="top"><div align="left">&nbsp;</div></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="staff_listing_table_alt">
+                            <a name="TTE" id="TTE"></a><b>
+                                Technical Training &amp; Evaluation Office (20M51)<br />
+                                1000 Legion Place, Suite 1500<br />
+                                Orlando, Florida 32801<br />
+                                Office Fax Number: (407) 835-5570
+                            </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="padding: 5px;" width="40%">Name</th>
+                        <th style="padding: 5px;" width="35%">Direct Office Phone Number</th>
+                        <th style="padding: 5px;" width="25%">Cell Phone Number</th>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:michael.faughnan@va.gov">Michael J. Faughnan, Ph.D.</a> (Director)</td>
+                        <td valign="top"><div align="left">&nbsp;</div></td>
+                        <td>
+                            <div align="left">
+                                202-255-0347<br />
+                                (Blackberry)
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:suzanne.rhodes@va.gov" target="_blank">Suzanne Rhodes, M.P.A., M.A., PMP</a> (Program Manager, Training Development)</td>
+                        <td><div align="left">(407) 835-5626</div></td>
+                        <td><div align="left">267-838-4324 (Blackberry)</div></td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="mailto:mary.herrick@va.gov" target="_blank">Mary Lee Herrick, Ph.D.</a> (Program Manager, Evaluation)</td>
+                        <td><div align="left">(407) 835-5623</div></td>
+                        <td><div align="left">215-983-9132 (Blackberry)</div></td>
+                    </tr>
+
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:Erwin.Wunderlich@va.gov" target="_blank">Erwin Wunderlich, P.E., Ed.D.</a></td>
+                        <td><div align="left">(407) 835-5627</div></td>
+                        <td><div align="left">&nbsp;</div></td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td><a href="mailto:Jeffrey.Pearson@va.gov" target="_blank">Jeffrey Pearson</a></td>
+                        <td><div align="left">(407) 835-5622</div></td>
+                        <td><div align="left">&nbsp;</div></td>
+                    </tr>
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:barry.pietrewicz@va.gov">Barry Pietrewicz</a></td>
+                        <td><div align="left">(407) 835-5625</div></td>
+                        <td><div align="left">&nbsp;</div></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><a href="mailto:Ariadna.Crawford@va.gov">Ariadna Crawford</a></td>
+                        <td><div align="left">(407) 835-5628</div></td>
+                        <td><div align="left">&nbsp;</div></td>
+                    </tr>
+
+                    <tr class="staff_listing_table_alt">
+                        <td><a href="mailto:Miriam.Diaz3@va.gov" target="_blank">Miriam Diaz</a></td>
+                        <td><div align="left">(407) 835-5624</div></td>
+                        <td><div align="left">&nbsp;</div></td>
+                    </tr>
+
+                    <tr>
+                        <td>Office Fax Number</td>
+                        <td><div align="left">(407) 835-5570</div></td>
+                        <td><div align="left">&nbsp;</div></td>
+                    </tr>
+                </table>
+    </table>
+</div>
+
+                @section scripts
+    {
+                    <script language="javascript">
+                        $(document).ready(function () {
+                            var $lft = $(".indxLft");
+                            var $rght = $(".indxRight");
+                            var hl = $lft.height();
+                            var hr = $rght.height();
+                            var bp;
+
+                            if (hl > hr) {
+
+                                $rght.height(hl);
+
+                            } else if (hr > hl) {
+                                bp = hr - hl;
+                                $lft.height(hr);
+                                $lft.css("background-position-y", bp);
+                            }
+
+                        });
+
+                    </script>
+                }

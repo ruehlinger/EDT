@@ -1,0 +1,43 @@
+﻿@using EDT.Models
+@{
+    ViewBag.Title = "Placeholder";
+}
+
+@section styles
+{
+
+}
+
+<div class="content-wrapper panel main-panel">
+        <!-- ANNOUNCEMENTS BALOON HERE -->
+    @{
+        if (ViewBag.Dev)
+        {
+        }
+        Html.RenderPartial("_Announcements", new Announcement());
+        Html.RenderPartial("_PageHeader");
+    }
+    <div class="content-wrapper">
+        <div class="presentationPanel01">
+            
+            <div class="panel-body  ">
+                <section>
+                    <ul class="list-group">
+                        <li class="list-group-item"><h3><a href="~/Home/Placeholder/@ViewBag.Dev.ToString()" target="_blank" title="Content Placeholder - I">Content Placeholder</a></h3></li>
+                        <li class="list-group-item"><h3><a href="~/Home/Placeholder/@ViewBag.Dev.ToString()" target="_blank" title="Content Placeholder - II">Content Placeholder</a></h3></li>
+                        <li class="list-group-item"><h3><a href="~/Home/Placeholder/@ViewBag.Dev.ToString()" target="_blank" title="Content Placeholder - III">Content Placeholder</a></h3></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+    {
+    <script type="text/javascript">
+        var baseUrl = "@Url.Content("~")";
+        baseUrl = baseUrl == "/" ? "" : baseUrl;
+        baseUrl += "/Home/ReadXMLFromFile/";
+    </script>
+}
